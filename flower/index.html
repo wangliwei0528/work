@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网上花店</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/public_nav.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!-- 返回顶部 -->
+	<div class="backbar">
+		<a href="javascript:void(0);">
+			<img src="img/back.png" alt="">
+		</a>
+	</div>
+<!-- 返回顶部 -->
+<!-- 客服 -->
+	<div class="set_chat">
+		<img src="img/icon_meiqia.png" alt="在线咨询">
+		<a class="chat_close" href="javascript:void(0);" onclick="$(this).parent().hide();" title="在线咨询">
+			<img src="img/closebtn_4.png" alt="在线咨询">
+		</a>
+		<a class="chat_order_search" href=""></a>
+		<a class="chat_sh" href="javascript:void(0);" onclick="window.open('http://www.huashi520.cn/qq.html');">售后咨询</a>
+	</div>
+<!-- 客服 -->
+<!-- 顶部导航条 -->
+	<div id="cat_fix">
+		<div class="cts">
+			<ul>
+				<li class="fix_logo"></li>
+				<li class="gaod"><a href="/">表白/求婚</a></li>
+				<li class="gaod"><a class="cfe6a00" href="/">送女友/送老婆</a></li>
+				<li class="gaod"><a href="/">送父母</a></li>
+				<li class="gaod"><a class="cfe6a00" href="/">生日鲜花</a></li>
+				<li class="gaod"><a href="/">送男神</a></li>
+				<li class="gaod"><a href="/">送闺蜜</a></li>
+				<li class="gaod"><a class="cfe6a00" href="/">道歉鲜花</a></li>
+				<li class="gaod"><a href="/">恋爱/结婚纪念日</a></li>
+				<li class="gaod"><a href="/">送老师</a></li>
+				<li class="gaod"><a href="/">约会鲜花</a></li>
+				<li class="gaod"><a href="/">送领导</a></li>
+				<li class="gaod"><a class="cfe6a00" href="/">玫瑰专区</a></li>
+			</ul>
+		</div>
+	</div>
+<!-- 顶部导航条 -->
+<!-- top textarea -->
+	<div class="public-top-layout">
+		<div class="topbar">
+			<div class="user-entry">
+				<a href="index.html">
+					<i class="home_ico"></i>首页
+				</a>
+				<a href="login.html" class="login" style="margin-left:20px;color:red">
+					登录,
+				</a>
+				<span>您还不是会员请</span>
+				<a href="register.html" class="register" style="color:red">
+					注册
+				</a>
+
+			</div>
+			<div class="quick-menu">
+				<dl>
+					<dt>
+						<img style="padding-right: 4px;" src="img/common/my_order.png">
+						<a style="vertical-align: middle;" href="#">我的订单</a>
+					</dt>
+				</dl>
+				<dl>
+					<dt>
+						<img style="padding-right: 4px;" src="img/common/order.png">
+						<a style="vertical-align: middle;" href="#">订单查询</a>
+					</dt>
+				</dl>
+				<dl>
+					<dt>
+						<img style="padding-right: 4px;" src="img/common/order_tou.png">
+						<a style="vertical-align: middle;" href="#">投诉建议</a>
+					</dt>
+				</dl>
+				<dl>
+					<dt style="padding-left: 10px;">
+						<a href="#" target="_blank">
+						<label style="color:red;color: blue;cursor: pointer;">合作或加盟</label>
+					</a>
+					</dt>
+				</dl>
+			</div>
+		</div>
+	</div>
+<!-- top textarea -->
+<!-- header -->
+	<div class="header-wrap">
+		<header>
+		<!-- logo -->
+			<div class="site-logo">
+				<a href="#">
+					<img src="img/huashi_logo.jpg" alt="">
+				</a>
+			</div>
+		<!-- logo -->
+		<!-- search -->
+			<div id="search" class="head-search-bar" style="margin-left:40px;">
+				<form class="search-form" method="" action="">
+					<div class="tab_1">商品</div>
+					<input placeholder="请输入您要搜索的商品关键字" name="keyword" id="keyword" type="text" class="input-text" value="" maxlength="60" x-webkit-speech="">
+					<input type="submit" id="button" value="搜索" class="input-submit">
+				</form>
+				<div class="keyword">热门搜索：
+					<ul>
+						<li>
+							<a href="#" target="_blank">玫瑰</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">百合</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">蓝色妖姬</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">情人节</a>
+						</li>
+						<li>
+							<a href=#" target="_blank">爱情鲜花</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">花篮</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">道歉鲜花</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">教师</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">七夕</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		<!-- search -->
+		<!-- 联系电话与购物车 -->
+			<div class="head-user-menu">
+				<dl class="my-mall">
+					<dt>
+						<span style="font-size: 12px;color: #555;font-weight: normal;">订花免费服务热线</span>
+						<br>4001-151-557 
+					</dt>
+				</dl>
+				<dl class="my-cart">
+					<dt class="cart">
+						<span class="ico"></span>
+						<a href="payment.html">购物车结算</a>
+						<i class="arrow"></i>
+					</dt>
+					<dd class="good">
+						<div class="sub-title">
+							<h4>最新加入的商品</h4>
+						</div>
+						<div class="incart-goods-box">
+							<ul class="incart-goods">
+								<li class="order">
+									<span>您的购物车中暂无商品,赶快选择心爱的商品吧！</span>
+								</li>
+								<li class="order goods">
+									<!-- 图片 -->
+									<span class="goods-thumb">
+										<a href="#">
+											<img src="img/upload/1_05190370693815692_60.jpg" alt="" title="南国相思">
+										</a>
+									</span>
+									<!-- 描述 -->
+									<span class="goods-name">
+										<a href="#" style="color:#000">
+											南国相思
+										</a>
+									</span>
+									<span class="goods-handle">
+										<em>
+											<a href="javascript:void(0);">删除</a>
+										</em>
+									</span>
+									<span class="goods-price">
+										￥309×<em class="num">1</em>
+									</span>									
+								</li>
+							</ul>
+						</div>
+						<div class="checkout">
+							<span class="total-price">
+								共<em class="num" style="color:red">1</em>中商品 总计金额 <em class="sum" style="color:red;font-size:18px">￥309.00</em>
+							</span>
+							<a href="payment.html" class="btn-cart">结算购物车中的商品</a>
+						</div>
+					</dd>
+					<div class="addcart-goods-num">1</div>
+				</dl>
+			</div>
+		<!-- 联系电话与购物车 -->
+		</header>
+	</div>
+<!-- header -->
+<!-- nav -->
+	<nav class="public-nav-layout">
+		<div class="wrapper">
+			<div class="all-category">
+				<div class="title"></div>
+				<div class="category" style="display:inherit">
+					<ul class="menu">
+						<li cat_id="256" class="odd">
+							<div class="class">
+								<i class="h_j"></i>
+								<h4>
+									<a href="javascript:">鲜花用途</a>
+								</h4>
+								<span class="recommend-class">
+									<a href="#" target="_blank">表白/求婚</a>
+									<a href="#" target="_blank">生日祝福</a>
+									<a href="#" target="_blank">探病/慰问</a>
+									<a href="#" target="_blank">友情/同窗</a>
+									<a href="#" target="_blank">祝福庆贺</a>
+									<a href="#" target="_blank">开业/乔迁</a>
+									<a href="#" target="_blank">道歉</a>
+									<a href="#" target="_blank">祭奠</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+						</li>
+						<li cat_id="2" class="even">
+							<div class="class">
+								<i class="h_j"></i>
+								<h4><a href="javascript:">鲜花花材</a></h4>
+								<span class="recommend-class">
+									<a href="#" target="_blank">玫瑰花</a>
+									<a href="#" target="_blank">百合</a>
+									<a href="#" target="_blank">玫瑰+百合</a>
+									<a href="#" target="_blank">康乃馨</a>
+									<a href="#" target="_blank">向日葵</a>
+									<a href="#" target="_blank">满天星</a>
+									<a href="#" target="_blank">扶郎</a>
+									<a href="#" target="_blank">香皂花</a>
+									<a href="#" target="_blank">永生花</a>
+								</span>
+								<span class="arrow"></span> 
+							</div>
+						</li>
+						<li cat_id="593" class="odd">
+							<div class="class">
+								<i class="h_j"></i>
+								<h4><a href="javascript:">鲜花类别</a></h4>
+								<span class="recommend-class">
+									<a href="#" target="_blank">鲜花</a>
+									<a href="#" target="_blank">礼盒</a>
+									<a href="#" target="_blank">桌花/台花</a>
+									<a href="#" target="_blank">开业花篮</a>
+									<a href="#" target="_blank">发财树</a>
+									<a href="#" target="_blank">巧克力</a>
+									<a href="#" target="_blank">卡通花束</a>
+									<a href="#" target="_blank">蛋糕</a>
+									<a href="#" target="_blank">果篮</a>
+								</span>
+								<span class="arrow"></span> 
+							</div>
+						</li>
+						<li cat_id="1" class="even">
+							<div class="class">
+								<i class="h_j"></i>
+								<h4><a href="javascript:">送花对象</a></h4>
+								<span class="recommend-class">
+									<a href="#" target="_blank">恋人</a>
+									<a href="#" target="_blank">朋友</a>
+									<a href="#" target="_blank">父母</a>
+									<a href="#" target="_blank">领导</a>
+					                <a href="#" target="_blank">老师</a>
+					                <a href="#" target="_blank">客户</a>
+					                <a href="#" target="_blank">长辈</a>
+					                <a href="3" target="_blank">病人</a>
+					             </span>
+					             <span class="arrow"></span>
+					        </div>
+					     </li>
+					     <li cat_id="3" class="odd">
+				            <div class="class">
+				            	<i class="h_j"></i>
+				                <h4><a href="javascript:">鲜花价格</a></h4>
+				              	<span class="recommend-class">
+					                  <a href="#" target="_blank">100-200元</a>
+					                  <a href="#" target="_blank">200-300元</a>
+					                  <a href="#" target="_blank">300-500元</a>
+					                  <a href="#" target="_blank">500-800元</a>
+					                  <a href="#" target="_blank">800元以上</a>
+				              	</span>
+				              <span class="arrow"></span> 
+				            </div>
+					    </li>
+					</ul>
+				</div>                       
+			</div>
+			<ul class="site-menu">
+	            <li>
+	           	 <a href="/" class="current">首页</a>
+	            </li>
+	            <li>
+	            	<a href="list.html">全部鲜花</a>
+	            </li>
+	            <li>
+	            	<a href="/zt/aiqing" target="_blank">爱情鲜花</a>
+	            </li>
+	            <li>
+	            	<a href="/zt/sr">生日鲜花</a>
+	            </li>
+	            <li>
+	            	<a href="/list-1102.html">开业花篮</a>
+	            </li>
+	            <li>
+	            	<a href="/zt/gaoduan" target="_blank">高端鲜花</a>
+	            </li>
+	            <li>
+	            	<a href="/zt/tejia/" target="_blank" style="position: relative;">特价鲜花
+	            		<img src="img/upload/shop/mark/discount.gif" style="position: absolute; top: 0px; z-index: auto; float: right; ">
+	            	</a>
+	            </li>
+	            <li>
+	            	<a href="/zt/liping" target="_blank" style="position: relative;">礼品专区
+	            		<img src="img/upload/shop/mark/hot.gif" style="position: absolute; top: 0px; z-index: auto; float: right; ">
+	            	</a>
+	            </li>
+       		</ul>
+		</div>
+	</nav>
+<!-- nav -->
+<!-- banner -->
+	<div class="home-focus-layout">
+    	<ul >
+    		<li>
+				<a href="">
+					<img src="img/banner/banner1.jpg" alt="">
+				</a>
+    		</li>
+    		<li>
+				<a href="">
+					<img src="img/banner/banner2.jpg" alt="">
+				</a>
+    		</li>
+    		<li>
+				<a href="">
+					<img src="img/banner/banner3.jpg" alt="">
+				</a>
+    		</li>
+    		<li>
+				<a href="">
+					<img src="img/banner/banner4.jpg" alt="">
+				</a>
+    		</li>
+    	</ul>
+    	<div class="full-screen-slides-pagination">
+	    	<span class="current">
+	    		<a href="javascript:void(0)"></a>
+	    	</span>
+	    	<span>
+	    		<a href="javascript:void(0)"></a>
+	    	</span>
+	    	<span>
+	    		<a href="javascript:void(0)"></a>
+	    	</span>
+	    	<span>
+	    		<a href="javascript:void(0)"></a>
+	    	</span>
+    	</div>
+	</div>
+<!-- banner -->
+<!-- 鲜花品牌 -->
+	<div class="home-sale-layout">
+		<div class="wrapper">
+			<div class="left-layout">
+        		<img src="img/h_brank.jpg" width="100%">
+        		<ul class="qu_list">
+           			<li>
+		                <a href="/" target="_blank">
+		                    <div class="h_info">
+			                    <p class="p1">爱情鲜花专区</p>
+			                    <p class="p2"><span>去看看</span></p>
+		                    </div>
+		                    <div class="h_img">
+		                    	<img src="http://img.ihuashi.cn/shop/templates/default/images/qu2.jpg" width="277" height="170">
+		                    </div>
+		                </a>
+           			</li>
+		            <li>
+		                <a href="/zt/sr" target="_blank">
+		                    <div class="h_info">
+			                    <p class="p1">生日鲜花专区</p>
+			                    <p class="p2"><span>去看看</span></p>
+		                    </div>
+		                    <div class="h_img">
+		                    	<img src="http://img.ihuashi.cn/shop/templates/default/images/qu1.jpg" width="277" height="170">
+		                    </div>
+		                </a>
+		            </li>
+        		</ul>
+    		</div>
+		</div>
+	</div>
+<!-- 鲜花品牌 -->
+<!-- 限时特惠 -->
+	<div class="limited_hot">
+		<div class="home-preferential-layout">
+			<div class="nav">
+				<img src="img/l_time.jpg" width="100%">
+				<div class="atime">
+					<p class="t1">距离本场结束还有：</p>
+					<p class="p2">
+						<span id="hour">04</span>:
+						<span id="minute">37</span>:
+						<span id="second">17</span>
+					</p>
+				</div>
+			</div>
+			<div class="pre_list">
+				<ul>
+					<li>
+						<a href="detail.html" target="_blank">
+							<div class="item-layout">
+								<img src="img/flowers/1_05152598149090507_360.jpg" width="215" height="215" style="display: inline;">
+								<p class="goods-name">触风的蝴蝶 （白玫瑰 爱情 友情 朋友 生日 情人 七夕 父母 教师 圣诞 礼盒）</p>
+								<p class="goods-price">
+									<em>￥248.00</em>
+									<span>￥328.00</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="item-layout">
+								<img src="img/flowers/1_05176647008996765_360.jpg" width="215" height="215" style="display: inline;">
+								<p class="goods-name">华丽邂逅</p>
+								<p class="goods-price">
+									<em>￥318.00</em>
+									<span>￥499.00</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="item-layout">
+								<img src="img/flowers/1_05152763272892485_360.jpg" width="215" height="215" style="display: inline;">
+								<p class="goods-name">红尘初妆 （蓝色妖姬 爱情 友情 朋友 生日 七夕 生日 父母 教师 圣诞）</p>
+								<p class="goods-price">
+									<em>￥668.00</em>
+									<span>￥868.00</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="item-layout">
+								<img src="img/flowers/1_05213999888249370_360.jpg" width="215" height="215" style="display: inline;">
+								<p class="goods-name">倾心 （百合 爱情 生日 情人 七夕）</p>
+								<p class="goods-price">
+									<em>￥277.00</em>
+									<span>￥299.00</span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- 限时特惠 -->
+<!-- 图片 -->
+	<div class="wrapper">
+		<div class="mt10">
+			<a href="" target="_blank" title="快捷、便利，立即订购">
+			<img style="width:1200px;" border="0" class="call_mid_pic" src="img/adv1.jpg">
+			</a>
+		</div>
+	</div>
+<!-- 图片 -->
+<!-- 1 -->
+	<div class="flower-content">
+	    <h2 class="mode_name">
+	        <span class="flower_name">特价鲜花</span>
+	        <span class="flower_item">special promotion</span>
+	    </h2>
+	    <div class="flower-nav">
+	        <div class="flower_tab wrapper">
+	            <a class="tag" href="" target="_blank">鲜花花束</a>
+	            <a class="tag" href="" target="_blank">鲜花礼盒</a>
+	            <a class="tag" href="" target="_blank">鲜花提篮</a>
+	            <a class="tag" href="" target="_blank">卡通花束</a>
+	            <a class="tag" href="" target="_blank">水果花篮</a>
+	            <a class="tag" href="" target="_blank">绿植发财树</a>
+	            <a class="tag" href="" target="_blank">永生花</a>
+	            <a class="tag" href="" target="_blank">皂花</a>
+	        </div>
+	    </div>
+	    <div class="home-standard-layout wrapper">
+	        <ul class="special_list">
+	            <li>
+	                <div class="goods-img">
+	                    <a href="" target="_blank">
+	                        <i class="h_tag h_tag_0"></i>
+	                        <img src="img/flowers/1_05298426628439084_360.jpg" width="218" height="218" style="display: inline;">
+	                    </a>
+	                </div>
+	                <div class="goods-info">
+	                    <h2>【特价】精选11朵红玫瑰加2只小熊公仔，满天星围边，叶上黄金间插（或用黄莺代替）</h2>
+	                    <p class="goods-tag"><i></i>表白/约会</p>
+	                    <p class="goods-tag"><i></i>道歉/生日</p>
+	                    <p class="goods-tag"><i></i>女友/老婆</p>
+	                    <p style="padding: 15px 0;font-size:12px">
+	                        <span class="goods-price">市场价 ：￥215</span>
+	                        <span>销量 ：5744</span>
+	                    </p>
+	                    <div class="goods-buy">
+	                        <span class="sp1">促销价 <em>￥189</em></span>
+	                        <a class="sp2" href="" target="_blank">立即购买</a>
+	                    </div>
+	                </div>
+	            </li>
+	            <li>
+	                <div class="goods-img">
+	                    <a href="" target="_blank">
+	                        <i class="h_tag h_tag_1"></i>
+	                        <img src="img/flowers/1_05611195706042272_360.jpg" width="218" height="218" style="display: inline;">
+	                    </a>
+	                </div>
+	                <div class="goods-info">
+	                    <h2>【特价】精选4枝顶级香水百合，2朵白玫瑰 黄莺装饰。</h2>
+	                    <p class="goods-tag"><i></i>表白/约会</p>
+	                    <p class="goods-tag"><i></i>道歉/生日</p>
+	                    <p class="goods-tag"><i></i>女友/老婆</p>
+	                    <p style="padding: 15px 0;font-size:12px">
+	                    	<span class="goods-price">市场价 ：￥312</span>
+	                    	<span>销量 ：5676</span>
+	                    </p>
+	                    <div class="goods-buy">
+	                        <span class="sp1">促销价 <em>￥218</em></span>
+	                        <a class="sp2" href="" target="_blank">立即购买</a>
+	                    </div>
+	                </div>
+	            </li>
+	            <li>
+	                <div class="goods-img">
+	                    <a href="" target="_blank">
+	                        <i class="h_tag h_tag_2"></i>
+	                        <img src="img/flowers/1_05695192000097209_360.jpg" width="218" height="218">
+	                    </a>
+	                </div>
+	                <div class="goods-info">
+	                    <h2>【特价】精选19朵红玫瑰，叶上黄金搭配。</h2>
+	                    <p class="goods-tag"><i></i>表白/约会</p>
+	                    <p class="goods-tag"><i></i>道歉/生日</p>
+	                    <p class="goods-tag"><i></i>女友/老婆</p>
+	                    <p style="padding: 15px 0;font-size:12px">
+	                    	<span class="goods-price">市场价 ：￥379</span>
+	                    	<span>销量 ：8812</span>
+	                    </p>
+	                    <div class="goods-buy">
+	                        <span class="sp1">促销价 <em>￥259</em></span>
+	                        <a class="sp2" href="" target="_blank">立即购买</a>
+	                    </div>
+	                </div>
+	            </li>
+	            <li>
+	                <div class="goods-img">
+	                    <a href="" target="_blank">
+	                        <i class="h_tag h_tag_3"></i>
+	                        <img src="img/flowers/1_05581103348823294_360.jpg" width="218" height="218">
+	                    </a>
+	                </div>
+	                <div class="goods-info">
+	                    <h2>【特价】33朵精品香槟玫瑰，满天星丰满围边，黄莺丰满点缀，2只可爱小熊</h2>
+	                    <p class="goods-tag"><i></i>表白/约会</p>
+	                    <p class="goods-tag"><i></i>道歉/生日</p>
+	                    <p class="goods-tag"><i></i>女友/老婆</p>
+	                    <p style="padding: 15px 0;font-size:12px">
+	                        <span class="goods-price">市场价 ：￥389</span>
+	                        <span>销量 ：6096</span>
+	                    </p>
+	                    <div class="goods-buy">
+	                        <span class="sp1">促销价 <em>￥310</em></span>
+	                        <a class="sp2" href="" target="_blank">立即购买</a>
+	                    </div>
+	                </div>
+	            </li>
+	        </ul>
+	 	</div>
+	</div>
+<!-- 1 -->
+<!-- 2 -->
+	<div class="flower-content">
+	    <h2 class="mode_name">
+	        <span class="flower_name">热卖鲜花</span>
+	        <span class="flower_item">HOT</span>
+	    </h2>
+	    <div class="flower-nav">
+	        <div class="flower_tab wrapper">
+	            <a class="tag" href="" target="_blank">红玫瑰</a>
+	            <a class="tag" href="" target="_blank">粉玫瑰</a>
+	            <a class="tag" href="" target="_blank">香槟玫瑰</a>
+	            <a class="tag" href="" target="_blank">白玫瑰</a>
+	            <a class="tag" href="" target="_blank">蓝色妖姬</a>
+	            <a class="tag" href="" target="_blank">百合</a>
+	            <a class="tag" href="" target="_blank">康乃馨</a>
+	            <a class="tag" href="" target="_blank">向日葵</a>
+	        </div>
+	    </div>
+	    <div class="home-standard-layout wrapper">
+	        <ul class="middle-goods-list2">
+	            <li class="frist_li">
+		            <a href="" target="_blank">
+		            <img src="img/flowers/f1.jpg" width="100%" style="display: inline;"></a>
+	            </li>
+	            <li>
+	                <a href="" target="_blank">
+		                <div class="item-layout">
+		                    <img src="img/flowers/1_05580249595346611_360.jpg" width="248" height="248" style="display: inline;">
+		                    <p class="goods-name">清水茉莉</p>
+		                    <p class="goods-price">
+			                    <em>￥189.00</em>
+			                    <span>￥219.00</span>
+		                    </p>
+		                </div>
+	                </a>
+	            </li>
+	            <li>
+	                <a href="" target="_blank">
+	                    <div class="item-layout">
+	                        <img src="img/flowers/1_05182853607536029_360.jpg" width="248" height="248" style="display: inline;">
+	                        <p class="goods-name">携手一生</p>
+	                        <p class="goods-price">
+	                            <em>￥189.00</em>
+	                            <span>￥299.00</span>
+	                        </p>
+	                    </div>
+	                </a>
+	            </li>
+	            <li>
+	                <a href="" target="_blank">
+	                    <div class="item-layout">
+                            <img src="img/flowers/1_05611217022138129_360.jpg" width="248" height="248" style="display: inline;">
+                            <p class="goods-name">和煦微风</p>
+                            <p class="goods-price">
+	                            <em>￥279.00</em>
+	                            <span>￥399.00</span>
+                            </p>
+	                    </div>
+	                </a>
+	            </li>
+	            <li>
+	                <a href="" target="_blank">
+                        <div class="item-layout">
+                            <img src="img/flowers/1_05642559854296637_360.jpg" width="248" height="248" style="display: inline;">
+                            <p class="goods-name">有点甜</p>
+                            <p class="goods-price">
+                            	<em>￥303.00</em>
+                            	<span>￥419.00</span>
+                            </p>
+                        </div>
+	                </a>
+	            </li>
+	            <li>
+	                <a href="" target="_blank">
+	                    <div class="item-layout">
+	                        <img src="img/flowers/1_05356330495869620_360.jpg" width="248" height="248" style="display: inline;">
+	                        <p class="goods-name">满满全是你</p>
+	                        <p class="goods-price">
+	                        	<em>￥289.00</em>
+	                        	<span>￥489.00</span>
+	                        </p>
+	                    </div>
+	                </a>
+	            </li>
+	            <li>
+	                <a href="" target="_blank">
+	                    <div class="item-layout">
+	                        <img src="img/flowers/1_05190372487748175_360.jpg" width="248" height="248" style="display: inline;">
+	                        <p class="goods-name">微微一笑很倾城</p>
+	                        <p class="goods-price">
+		                        <em>￥299.00</em>
+		                        <span>￥369.00</span>
+	                        </p>
+	                    </div>
+	                </a>
+	            </li>
+	        </ul>
+	    </div>
+	</div>
+<!-- 2 -->
+<!-- 3 -->
+	<div class="flower-content">
+	    <h2 class="mode_name">
+	        <span class="flower_name">热卖鲜花</span>
+	        <span class="flower_item">HOT</span>
+	    </h2>
+	    <div class="flower-nav">
+	        <div class="flower_tab wrapper">
+	            <a class="tag" href="" target="_blank">送恋人</a>
+	            <a class="tag" href="" target="_blank">送朋友</a>
+	            <a class="tag" href="" target="_blank">送父母</a>
+	            <a class="tag" href="" target="_blank">送老师</a>
+	            <a class="tag" href="" target="_blank">送长辈</a>
+	            <a class="tag" href="" target="_blank">送客户</a>
+	            <a class="tag" href="" target="_blank">看望病人</a>
+        	</div>	
+	    </div>
+	    <div class="home-standard-layout wrapper">
+	        <ul class="middle-goods-list2">
+	            <li class="frist_li">
+		            <a href="" target="_blank">
+		            <img src="img/flowers/f2.jpg" width="100%" style="display: inline;"></a>
+	            </li>
+	            <li>
+	                <a href="" target="_blank">
+		                <div class="item-layout">
+		                    <img src="img/flowers/1_05581059421346281_360.jpg" width="248" height="248" style="display: inline;">
+		                    <p class="goods-name">清水茉莉</p>
+		                    <p class="goods-price">
+			                    <em>￥189.00</em>
+			                    <span>￥219.00</span>
+		                    </p>
+		                </div>
+	                </a>
+	            </li>
+	            <li>
+	                <a href="" target="_blank">
+	                    <div class="item-layout">
+	                        <img src="img/flowers/1_05264865531604459_360.jpg" width="248" height="248" style="display: inline;">
+	                        <p class="goods-name">携手一生</p>
+	                        <p class="goods-price">
+	                            <em>￥189.00</em>
+	                            <span>￥299.00</span>
+	                        </p>
+	                    </div>
+	                </a>
+	            </li>
+	            <li>
+	                <a href="" target="_blank">
+	                    <div class="item-layout">
+                            <img src="img/flowers/1_05671635616128380_360.jpg" width="248" height="248" style="display: inline;">
+                            <p class="goods-name">和煦微风</p>
+                            <p class="goods-price">
+	                            <em>￥279.00</em>
+	                            <span>￥399.00</span>
+                            </p>
+	                    </div>
+	                </a>
+	            </li>
+	            <li>
+	                <a href="" target="_blank">
+                        <div class="item-layout">
+                            <img src="img/flowers/1_05356330495869620_360.jpg" width="248" height="248" style="display: inline;">
+                            <p class="goods-name">有点甜</p>
+                            <p class="goods-price">
+                            	<em>￥303.00</em>
+                            	<span>￥419.00</span>
+                            </p>
+                        </div>
+	                </a>
+	            </li>
+	            <li>
+	                <a href="" target="_blank">
+	                    <div class="item-layout">
+	                        <img src="img/flowers/1_05695192000097209_360.jpg" width="248" height="248" style="display: inline;">
+	                        <p class="goods-name">满满全是你</p>
+	                        <p class="goods-price">
+	                        	<em>￥289.00</em>
+	                        	<span>￥489.00</span>
+	                        </p>
+	                    </div>
+	                </a>
+	            </li>
+	            <li>
+	                <a href="" target="_blank">
+	                    <div class="item-layout">
+	                        <img src="img/flowers/1_05689936933977095_360.jpg" width="248" height="248" style="display: inline;">
+	                        <p class="goods-name">微微一笑很倾城</p>
+	                        <p class="goods-price">
+		                        <em>￥299.00</em>
+		                        <span>￥369.00</span>
+	                        </p>
+	                    </div>
+	                </a>
+	            </li>
+	        </ul>
+	    </div>
+	</div>
+<!-- 3 -->
+<!-- 图片 -->
+	<div class="wrapper">
+		<div class="mt20 home-adv-layout" style="margin-top:10px">
+			<a href="/zt/fm" target="_blank">
+			<img src="img/adv2.jpg" style="display: inline;">
+			</a>
+		</div>
+	</div>
+<!-- 图片 -->
+<!-- 4 -->
+	<div class="flower-content">
+    <h2 class="mode_name">
+        <span class="flower_name">爱情鲜花</span>
+        <span class="flower_item">Love</span>
+    </h2>
+    <div class="flower-nav">
+        <div class="flower_tab wrapper">
+            <a class="tag" href="" target="_blank">9朵</a>
+            <a class="tag" href="" target="_blank">11朵</a>
+            <a class="tag" href="" target="_blank">19朵</a>
+            <a class="tag" href="" target="_blank">21朵</a>
+            <a class="tag" href="" target="_blank">33朵</a>
+            <a class="tag" href="" target="_blank">66朵</a>
+            <a class="tag" href="" target="_blank">99朵</a>
+            <a class="tag" href="" target="_blank">99朵以上</a>
+        </div>
+    </div>
+    <div class="home-standard-layout wrapper">
+        <div class="left-sidebar">
+            <div class="left-ads">
+	            <a href="/goods-101804.html" target="_blank">
+	            	<img src="img/flowers/f3.jpg" style="display: inline;">
+	            </a>
+            </div>
+        </div>
+        <div class="middle-layout">
+            <div class="tabs-panel middle-goods-list ">
+                <ul>
+                    <li style="opacity: 0.9;">
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">长相思</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05580998566096126_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>    
+                    <li style="opacity: 0.9;">
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">长相思</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05580976340554649_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>   
+                    <li style="opacity: 0.9;">
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">长相思</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05307249089670126_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>   
+                    <li style="opacity: 0.9;">
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">长相思</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05190370693815692_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>   
+                    <li style="opacity: 0.9;">
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">长相思</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05264860673687522_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>   
+                     <li style="opacity: 0.9;">
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">长相思</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05213999888249370_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>                                           
+                </ul>
+            </div>
+        </div>
+    </div>
+	</div>
+<!-- 4 -->
+<!-- 5 -->
+	<div class="flower-content">
+    <h2 class="mode_name">
+        <span class="flower_name">精品高端</span>
+        <span class="flower_item">HIGN-end</span>
+    </h2>
+    <div class="flower-nav">
+       <div class="flower_tab wrapper">
+            <a class="tag" href="" target="_blank">表白/求婚</a>
+            <a class="tag" href="" target="_blank">道歉</a>
+            <a class="tag" href="" target="_blank">表白男神</a>
+            <a class="tag" href="" target="_blank">友谊/闺蜜</a>
+            <a class="tag" href="" target="_blank">约会</a>
+            <a class="tag" href="" target="_blank">恋爱纪念日</a>
+        </div>
+    </div>
+    <div class="home-standard-layout wrapper">
+        <div class="left-sidebar">
+            <div class="left-ads">
+	            <a href="" target="_blank">
+	            	<img src="img/flowers/f4.jpg" style="display: inline;">
+	            </a>
+            </div>
+        </div>
+        <div class="middle-layout">
+            <div class="tabs-panel middle-goods-list ">
+                <ul>
+                    <li>
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">长相思</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05303833749323159_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>    
+                    <li>
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">长相思</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05213805824798043_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>   
+                    <li>
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">长相思</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05581103348823294_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>   
+                    <li>
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">长相思</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05213929530491109_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>   
+                    <li>
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">长相思</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05164597934533767_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>   
+                     <li>
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">长相思</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05213985392768611_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>                                           
+                </ul>
+            </div>
+        </div>
+    </div>
+	</div>
+<!-- 5 -->
+<!-- 6 -->
+	<div class="flower-content">
+    <h2 class="mode_name">
+        <span class="flower_name">开业用花</span>
+        <span class="flower_item">opering gifts</span>
+    </h2>
+    <div class="flower-nav">
+       <div class="flower_tab wrapper">
+            <a class="tag" href="" target="_blank">开业花篮</a>
+            <a class="tag" href="" target="_blank">三脚架花篮</a>
+            <a class="tag" href="" target="_blank">台花桌花</a>
+            <a class="tag" href="" target="_blank">发财树</a>
+            <a class="tag" href="" target="_blank">鸿运当头</a>
+        </div>
+    </div>
+    <div class="home-standard-layout wrapper">
+        <div class="left-sidebar">
+            <div class="left-ads">
+	            <a href="" target="_blank">
+	            	<img src="img/flowers/f5.jpg" style="display: inline;">
+	            </a>
+            </div>
+        </div>
+        <div class="middle-layout">
+            <div class="tabs-panel middle-goods-list ">
+                <ul>
+                    <li>
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">开业吉祥 单个</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05175743426201273_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>    
+                    <li>
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">顾客盈门 （花篮）</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05211981127308379_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>   
+                    <li>
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">金玉满堂 单个</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05210554217742187_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>   
+                    <li>
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">一飞冲天 单个</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05212049603490722_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>   
+                    <li>
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">生意永盛 单个</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05175752962399981_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>   
+                     <li>
+	                    <dl>
+		                    <dt class="goods-name">
+		                    	<a target="_blank" href="">万事如意 单个</a>
+		                    </dt>
+		                    <dd class="goods-thumb">
+		                    	<a target="_blank" href="">
+		                    	<img src="img/flowers/1_05581162264434991_360.jpg" style="display: inline;">
+		                    	</a>
+		                    </dd>
+		                    <dd class="goods-price">
+			                    <em>￥260.00</em>
+			                    <span class="original">￥369.00</span>
+		                    </dd>
+	                    </dl>
+                    </li>                                           
+                </ul>
+            </div>
+        </div>
+    </div>
+	</div>
+<!-- 6 -->
+<!-- 图片 -->
+	<div class="wrapper">
+		<div class="mt20 home-adv-layout" style="margin-top:10px">
+			<a href="" target="_blank">
+				<img src="img/flowers/adv3.jpg" style="display: inline;">
+			</a>
+		</div>
+	</div>
+<!-- 图片 -->
+<!-- 晒单 -->
+	<div class="wrapper">
+		<div class="home-share">
+			<div class="caption">
+				<p>热门晒单</p>
+			</div>
+			<div class="scrollbox">
+				<ul id="hot_show_order"> 
+					<li>
+						<div class="share_c">
+							<div class="l">
+								<a href="" target="_blank">
+									<img src="img/flowers/1_05190370693815692_60.jpg">
+								</a>
+							</div>
+							<div class="r">
+								<p>
+									<a href="" target="_blank">南国相思</a>
+								</p>
+								<p class="s_title">
+									<a class="s_content" href="" target="_blank">
+										非常满意
+									</a> 
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="share_c">
+							<div class="l">
+								<a href="" target="_blank">
+								<img src="img/flowers/1_05298426628439084_60.jpg">
+								</a>
+							</div>
+							<div class="r">
+								<p>
+									<a href="" target="_blank">
+									花开盛景
+									</a> 
+								</p>
+								<p class="s_title">
+									<a class="s_content" href="" target="_blank">花不香，但是真的挺好看的。
+									</a> 
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="share_c">
+							<div class="l">
+								<a href="" target="_blank">
+									<img src="img/flowers/1_05152590533428218_60.jpg">
+								</a>
+							</div>
+							<div class="r">
+								<p>
+									<a href="" target="_blank">
+										比翼双飞 （红玫瑰 爱情 友情 朋友 生日 情人 七夕 礼盒 圣诞）
+									</a> 
+								</p>
+								<p class="s_title">
+									<a class="s_content" href="" target="_blank">
+										花很好！花很好！花很好！真的非常好，老婆回老家了都能及时收到花，非常好！
+									</a> 
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="share_c">
+							<div class="l">
+								<a href="" target="_blank">
+									<img src="img/flowers/1_05496484754877885_60.jpg">
+								</a>
+							</div>
+							<div class="r">
+								<p>
+									<a href="" target="_blank">
+										相爱永恒
+									</a> 
+								</p>
+								<p class="s_title">
+									<a class="s_content" href="" target="_blank">
+									还行
+									</a> 
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="share_c">
+							<div class="l">
+								<a href="" target="_blank">
+									<img src="img/flowers/1_05491271615667082_60.jpg">
+								</a>
+							</div>
+							<div class="r">
+								<p>
+									<a href="" target="_blank">
+										我们的小热恋
+									</a> 
+								</p>
+								<p class="s_title">
+									<a class="s_content" href="" target="_blank">
+									挺不错的，质量挺好，和店家描述相符，价格也实惠，发货速度快，我还很担心害怕女朋友镇上送不到，没想到也送来了，以后还会光临的。
+									</a> 
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="share_c">
+							<div class="l">
+								<a href="" target="_blank">
+									<img src="img/flowers/1_05190370693815692_60.jpg">
+								</a>
+							</div>
+							<div class="r">
+								<p>
+									<a href="" target="_blank">南国相思
+									</a>
+								</p>
+								<p class="s_title">
+									<a class="s_content" href="" target="_blank">头一次订，东西跟图片一样，很满意，卖家很靠谱
+									</a> 
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- 晒单 -->
+	<div class="footer-line"></div>
+<!-- footer -->
+	<div class="fttff29">
+		<div class="warp-all236">
+			<div class="mod_agree">
+				<ul class="mod_agree_con">
+					<li class="mod_agree_item mod_agree_item1">
+						<a>
+							<img src="img/aafda0df33d2a95e6010.png">
+						</a>
+						<strong>真品货源</strong>
+						<span>正品，优质，放心</span>
+					</li>
+					<li class="mod_agree_item mod_agree_item2">
+						<a>
+							<img src="img/f0a5ee0bfc20dd005850.png">
+						</a> 
+						<strong>数据互通</strong>
+						<span>网站，商家，消费者</span>
+					</li>
+					<li class="mod_agree_item mod_agree_item3">
+						<a>
+							<img src="img/72edb29cc2ad2af46000.png">
+						</a> 
+						<strong>统一价格</strong>
+						<span>拒绝被宰，安心购物</span>
+					</li>
+					<li class="mod_agree_item mod_agree_item4">
+						<a>
+							<img src="img/c827005fae642e146280.png">
+						</a> 
+						<strong>担保交易</strong>
+						<span>支付宝担保，交易更安全</span>
+					</li>
+					<li class="mod_agree_item mod_agree_item5">
+						<a>
+							<img src="img/3497c1b195bde1928550.png">
+						</a> 
+						<strong>闪电发货</strong>
+						<span>1-2小时送货上门</span>
+					</li>
+					<li class="mod_agree_item mod_agree_item6">
+						<a>
+							<img src="img/aafda0df33d2a95e6010.png">
+						</a> 
+						<strong>惊喜购</strong>
+						<span>帮你发现身边的好货</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer style="border:none">
+		<div class="wapper">
+			<ul>
+	            <li> 
+	            	<dl class="s1">
+	                    <dt>
+	                        购物指南      
+	                     </dt>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="品牌服务"> 品牌服务 </a>
+	                    </dd>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="购物流程"> 购物流程 </a>
+	                    </dd>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="订购必读"> 订购必读 </a>
+	                    </dd>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="VIP会员"> VIP会员 </a>
+		                </dd>
+	                </dl>
+	            </li>
+	            <li> 
+	            	<dl class="s2">
+	                    <dt>
+	                        支付方式      
+	                    </dt>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="在线支付"> 在线支付 </a>
+	                    </dd>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="发票说明"> 发票说明 </a>
+	                    </dd>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="银行转账说明"> 银行转账说明 </a>
+	                    </dd>
+	                    <dd>
+	                    	<i></i>
+	                    	<a href="" title="货到付款及要求"> 货到付款及要求 </a>
+	                    </dd>
+	                </dl>
+	            </li>
+	            <li> 
+	            	<dl class="s3">
+	                    <dt>
+	                        配送方式     
+	                    </dt>
+	                    <dd>
+	                    	<i></i>
+	                    	<a href="" title="配送范围"> 配送范围 </a>
+	                    </dd>
+	                    <dd>
+	                    	<i></i>
+	                    	<a href="" title="鲜花定时配送"> 鲜花定时配送 </a>
+	                    </dd>
+	                    <dd>
+	                    	<i></i>
+	                    	<a href="" title="配送说明"> 配送说明 </a>
+	                    </dd>
+	                    <dd>
+	                    	<i></i>
+	                    	<a href="" title="配送费用收取标准"> 配送费用收取标准 </a>
+	                    </dd>
+	                </dl>
+	            </li>
+	            <li> 
+	            	<dl class="s4">
+	                    <dt>
+	                        售后服务      
+	                    </dt>
+	                    <dd>
+	                    	<i></i>
+	                   		<a href="" title="订单处理"> 订单处理 </a>
+	                    </dd>
+	                    <dd>
+	                    	<i></i>
+	                    	<a href="" title="在线支付"> 在线支付 </a>
+	                    </dd>
+	                    <dd>
+	                    	<i></i>
+	                    	<a href="" title="投诉处理规范"> 投诉处理规范 </a>
+	                    </dd>
+	                    <dd>
+	                    	<i></i>
+	                    	<a href="" title="订单查询及撤销"> 订单查询及撤销 </a>
+	                    </dd>
+	                    <dd>
+	                    	<i></i>
+	                    	<a href="" title="修改订单信息说明"> 修改订单信息说明 </a>
+	                    </dd>
+	                </dl>
+	            </li>
+	            <li> 
+	            	<dl class="s5">
+	                    <dt>
+	                        相关知识
+	                    </dt>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="鲜花枝数寓意"> 鲜花枝数寓意 </a>
+	                    </dd>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="浪漫花语"> 浪漫花语 </a>
+	                    </dd>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="节日送花寓意"> 节日送花寓意 </a>
+	                    </dd>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="蛋糕尺寸"> 蛋糕尺寸 </a>
+	                    </dd>
+	                </dl>
+	            </li>
+	            <li> <dl class="s6">
+	                    <dt>
+	                        帮助中心      
+	                    </dt>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="关于我们"> 关于我们 </a>
+	                    </dd>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="联系我们"> 联系我们 </a>
+	                    </dd>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="安全条款"> 安全条款 </a>
+	                    </dd>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="隐私保护"> 隐私保护 </a>
+	                    </dd>
+	                    <dd>
+		                    <i></i>
+		                    <a href="" title="常见问题"> 常见问题 </a>
+	                    </dd>
+	                </dl>
+	            </li>
+        	</ul>
+        	<div class="help">
+            <div class="w1190 clearfix">
+                <div class="contact f-l">
+                    <div class="contact-border clearfix">
+                        <div style="width:40%;float:left;">
+                            <div style="width:100%;height:25%;margin-top:6px;">
+                                <label>花店经营时间</label>
+                            </div>
+                            <div style="width:100%;height:25%;margin-top:6px;">
+                                <label>9:00~20:00</label>
+                            </div>
+                            <div style="width:100%;height:25%;margin-top:6px;">
+                                <label>花店留言回复时间</label>
+                            </div>
+                            <div style="width:100%;height:25%;margin-top:6px;">
+                                <label>9:00~22:00</label>
+                            </div>
+                        </div>
+                        <div style="width:60%;float:right;">
+                            <div style="width:100%;height:25%;margin-top:6px;">
+                                <label>花店服务热线（免长途费）</label>
+                            </div>
+                            <div style="width:100%;height:25%;margin-top:6px;">
+                                <span class="ic tel t20">4001-151-557</span>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		</div>
+	</footer>
+	<div id="footer" class="wrapper">	    
+	    <p>
+	    	<a href="/">首页</a>
+	        | <a href="">购物指南</a>
+	        | <a href="">支付方式</a>
+	        | <a href="">配送方式</a>
+	        | <a href="">售后服务</a>
+	        | <a href="">相关知识</a>
+	        | <a href="">帮助中心</a>
+	        | <a href="" style="color: blue;">合作或加盟</a>
+	    </p>
+   	唯婚网络科技有限公司
+	</div>
+<!-- footer -->
+</body>
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+<script>
+    /*banner*/
+    var images = $('.home-focus-layout li');
+    var spans = $('.full-screen-slides-pagination span');
+    function showImage(index) {
+        for (var i = 0; i < images.length; i++) {
+            spans[i].index = i;
+            images[i].index = i;
+            images[i].style.opacity = '0';
+            spans[i].style.background = 'rgba(0,0,0,0.25)';
+        }
+        images[index].style.opacity = '1';
+        spans[index].style.background = 'red';
+    }
+    //自动轮播
+    var count = 0;
+    function imageMove() {
+        if (count ==images.length) {
+            count = 0;
+        }
+        showImage(count);
+        count++;
+    }
+    var imageInitailMove = setInterval(imageMove, 3000);
+    /*顶部隐藏导航*/
+    window.addEventListener("scroll",function(){
+        var flag=true;
+        var cat_fix=$("#cat_fix");
+        var st=document.body.scrollTop||document.documentElement.scrollTop;//兼容
+        if(st>300){
+            if(flag){
+                flag=false;
+                $("#cat_fix").css({top:0});
+            }
+        }else{
+            if(flag){
+                flag=true;
+                $("#cat_fix").css({top:-50});
+            }
+        }
+    })
+</script>

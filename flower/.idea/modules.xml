@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:/work/wamp64/www/BUI/.idea/201711.iml" filepath="D:/work/wamp64/www/BUI/.idea/201711.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/flower.iml" filepath="$PROJECT_DIR$/.idea/flower.iml" />
+      <module fileurl="file://D:/work/wamp/wamp64/www/.idea/www.iml" filepath="D:/work/wamp/wamp64/www/.idea/www.iml" />
+      <module fileurl="file://D:/work/wamp64/www/爱旅游博客/.idea/爱旅游博客.iml" filepath="D:/work/wamp64/www/爱旅游博客/.idea/爱旅游博客.iml" />
+    </modules>
+  </component>
+</project>

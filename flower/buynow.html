@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>立即购买</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/public_nav.css">
+    <link rel="stylesheet" href="css/buynow.css">
+</head>
+<body>
+<!-- top textarea -->
+<div class="public-top-layout">
+    <div class="topbar">
+        <div class="user-entry">
+            <a href="index.html">
+                <i class="home_ico"></i>首页
+            </a>
+        </div>
+        <div class="quick-menu">
+            <dl>
+                <dt>
+                    <img style="padding-right: 4px;" src="img/common/my_order.png">
+                    <a style="vertical-align: middle;" href="#">我的订单</a>
+                </dt>
+            </dl>
+            <dl>
+                <dt>
+                    <img style="padding-right: 4px;" src="img/common/order.png">
+                    <a style="vertical-align: middle;" href="#">订单查询</a>
+                </dt>
+            </dl>
+            <dl>
+                <dt>
+                    <img style="padding-right: 4px;" src="img/common/order_tou.png">
+                    <a style="vertical-align: middle;" href="#">投诉建议</a>
+                </dt>
+            </dl>
+            <dl>
+                <dt style="padding-left: 10px;">
+                    <a href="#" target="_blank">
+                        <label style="color:red;color: blue;cursor: pointer;">合作或加盟</label>
+                    </a>
+                </dt>
+            </dl>
+        </div>
+    </div>
+</div>
+<!-- top textarea -->
+<header>
+    <main>
+        <div class="site-logo">
+            <a href="#">
+                <img src="img/huashi_logo.jpg" alt="">
+            </a>
+        </div>
+        <ul class="ncc-flow" style="background: url(http://img.ihuashi.cn/shop/templates/default/images/buy/cart_tech_03.jpg) no-repeat;margin-top: 30px;">
+            <li style="height: 60px;">
+                <p>加入购物车</p>
+            </li>
+            <li style="height: 60px;">
+                <p style="color: #ff6c86;">填写核对订单信息</p>
+            </li>
+            <li style="height: 60px;">
+                <p>支付并完成</p>
+            </li>
+        </ul>
+    </main>
+</header>
+<div class="ncc-wrapper">
+    <div class="container_settle">
+        <div class="tips txs12 pdb10">
+            <span class="r1">温馨提示：</span>
+            <span>您现在使用的是“免注册下单”模式，如果您有账号，可以</span>
+            <a href="http://www.hua3399.com/index.php?act=login&amp;op=index" target="_blank" class="b1">点击这里登录</a>
+            <span>进行登录下单,<a href="" target="_blank" class="b1">注册</a></span>
+
+        </div>
+        <div class="main_ct_tt">收货信息：</div>
+
+        <div class="ncc-receipt-info current_box" id="new_address">
+            <div class="ncc-receipt-info-title" style="font-size: 14px;">
+                <a href="javascript:void(0)" nc_type="buy_edit" id="edit_reciver" style="display: none;">
+                    <span style="color: #000;">收货信息：<span id="addr_infos"></span>&nbsp;&nbsp;</span>
+                    [修改]
+                </a>
+            </div>
+            <div id="addr_list" class="ncc-candidate-items">
+                <div class="ncc-form-default">
+                    <form method="POST" id="addr_form" action="http://www.hua3399.com/shop/index.php">
+                        <input type="hidden" value="buy" name="act">
+                        <input type="hidden" value="add_addr" name="op">
+                        <input type="hidden" name="form_submit" value="ok">
+                        <dl>
+                            <dt><i class="required">*</i>收花人姓名：</dt>
+                            <dd>
+                                <input type="text" class="text w180" name="true_name" maxlength="20" id="true_name" value="">
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt> <i class="required">*</i>收花人手机：</dt>
+                            <dd>
+                                <input type="text" class="text w180" name="mob_phone" id="mob_phone" maxlength="15" value="">
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><i class="required">*</i>配送地址：</dt>
+                            <dd>
+                                <div>
+                                    <input type="hidden" name="province_id" id="_area_1" value="">
+                                    <input type="hidden" name="city_id" id="_area_2" value="">
+                                    <select><option value="">-请选择-</option><option value="1">北京</option><option value="2">天津</option><option value="3">河北</option><option value="4">山西</option><option value="5">内蒙古</option><option value="6">辽宁</option><option value="7">吉林</option><option value="8">黑龙江</option><option value="9">上海</option><option value="10">江苏</option><option value="11">浙江</option><option value="12">安徽</option><option value="13">福建</option><option value="14">江西</option><option value="15">山东</option><option value="16">河南</option><option value="17">湖北</option><option value="18">湖南</option><option value="19">广东</option><option value="20">广西</option><option value="21">海南</option><option value="22">重庆</option><option value="23">四川</option><option value="24">贵州</option><option value="25">云南</option><option value="26">西藏</option><option value="27">陕西</option><option value="28">甘肃</option><option value="29">青海</option><option value="30">宁夏</option><option value="31">新疆</option><option value="32">台湾</option><option value="33">香港</option><option value="34">澳门</option><option value="35">海外</option></select><select><option value="">-请选择-</option><option value="1">北京</option><option value="2">天津</option><option value="3">河北</option><option value="4">山西</option><option value="5">内蒙古</option><option value="6">辽宁</option><option value="7">吉林</option><option value="8">黑龙江</option><option value="9">上海</option><option value="10">江苏</option><option value="11">浙江</option><option value="12">安徽</option><option value="13">福建</option><option value="14">江西</option><option value="15">山东</option><option value="16">河南</option><option value="17">湖北</option><option value="18">湖南</option><option value="19">广东</option><option value="20">广西</option><option value="21">海南</option><option value="22">重庆</option><option value="23">四川</option><option value="24">贵州</option><option value="25">云南</option><option value="26">西藏</option><option value="27">陕西</option><option value="28">甘肃</option><option value="29">青海</option><option value="30">宁夏</option><option value="31">新疆</option><option value="32">台湾</option><option value="33">香港</option><option value="34">澳门</option><option value="35">海外</option></select><input type="hidden" name="area_info" id="region" class="area_names" value="">
+                                    <input type="hidden" name="area_id" id="_area_3" class="area_ids" value="">
+                                    <input type="text" class="text w500" name="address" id="address" maxlength="80" value="" placeholder="填写详细地址">
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl id="address_alert" style="display:none;">
+                            <dt> 温馨提示：</dt>
+                            <dd>
+                                <div style="color: red;">
+                                    <span>因您选择的是港澳台特殊地区，花材是内地价格的4倍，下单后订单价将自将自动变为原来的4倍！</span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><i class="required">*</i>订花人姓名：</dt>
+                            <dd>
+                                <input type="text" class="text w180" name="dhrxm" id="dhrxm" maxlength="80" value="">
+                                <span class="hint" style="padding-left: 10px; color: #888;">请放心填写，我们将严格保证客户的私密性，没有您的要求我们将不会向收花人透露您的信息</span>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><i class="required">*</i>订花人手机：</dt>
+                            <dd>
+                                <input type="text" class="text w180" name="dhrdh" id="dhrdh" maxlength="80" value="">
+                                <p class="hint"></p>
+                            </dd>
+                        </dl>
+                    </form>
+                </div>
+                <div class="hr16" style="margin-left: 102px !important;"> <a id="hide_addr_list" class="ncc-btn ncc-btn-acidblue" href="javascript:void(0);">保存</a></div>
+            </div>
+        </div>
+        <form method="post" id="order_form" name="order_form" action="">
+            <div class="main_ct_tt">配送时段及客服工号：</div>
+            <div class="ncc-receipt-info order_contents">
+                <div class="txs14 txw1 g3 pdb10" style="background: #fafafa;padding: 17px 17px 7px 26px;font-weight: normal;">送货日期: &nbsp;&nbsp;<input type="text" class="text w180 hasDatepicker" name="psrq" id="psrq" maxlength="80" value="2018-05-04" readonly="readonly"><label class="add-on"></label>
+                    <select name="jtpssj" style="width: 180px;height: 34px;margin-left: 8px;">
+                        <option value="不限">不限时段</option>
+                        <option value="上午">上午</option>
+                        <option value="下午">下午</option>
+                        <option value="晚上">晚上</option>
+                        <option value="6-8点" class="n_jr">6-8点</option>
+                        <option value="8-10点" class="n_jr">8-10点</option>
+                        <option value="10-12点" class="n_jr">10-12点</option>
+                        <option value="12-14点" class="n_jr">12-14点</option>
+                        <option value="14-16点" class="n_jr">14-16点</option>
+                        <option value="16-18点" class="n_jr">16-18点</option>
+                        <option value="18-20点" class="n_jr">18-20点</option>
+                        <option value="20-22点" class="n_jr">20-22点</option>
+                        <option value="22-24点" class="n_jr">22-24点</option>
+                    </select>
+                </div>
+                <div class="txs14 txw1 g3 pdb10" style="background: #fafafa;padding: 17px 17px 27px 26px;font-weight: normal;line-height: 38px;">客服工号: &nbsp;
+                    <select name="order_kfgh" style="width: 100px;height: 34px;">
+                        <option value="" selected="">默认客服</option>
+                        <option value="gh1001">工号：1001</option>
+                        <option value="gh1002">工号：1002</option>
+                        <option value="gh1003">工号：1003</option>
+                        <option value="gh1004">工号：1004</option>
+                        <option value="gh1005">工号：1005</option>
+                        <option value="gh1006">工号：1006</option>
+                        <option value="gh1007">工号：1007</option>
+                        <option value="gh1008">工号：1008</option>
+                        <option value="gh1009">工号：1009</option>
+                        <option value="gh2001">工号：2001</option>
+                        <option value="gh2002">工号：2002</option>
+                        <option value="gh2003">工号：2003</option>
+                        <option value="gh2004">工号：2004</option>
+                        <option value="gh2005">工号：2005</option>
+                        <option value="gh2006">工号：2006</option>
+                        <option value="gh2007">工号：2007</option>
+                        <option value="gh2008">工号：2008</option>
+                        <option value="gh2009">工号：2009</option>
+                        <option value="gh3001">工号：3001</option>
+                        <option value="gh3002">工号：3002</option>
+                        <option value="gh3003">工号：3003</option>
+                        <option value="gh3004">工号：3004</option>
+                        <option value="gh3005">工号：3005</option>
+                        <option value="gh3006">工号：3006</option>
+                        <option value="gh3007">工号：3007</option>
+                        <option value="gh3008">工号：3008</option>
+                        <option value="gh3009">工号：3009</option>
+                    </select>
+                </div>
+                <div class="txs14 xw1 g3 pdb10 sj_alert" style="display: none;">温馨提示：<label style="color: red;">
+                    为了更好的迎接520，05月18日 到 05月20日期间一律暂停货到付款订单！
+                    节日期间我们承诺订单将一定在当天送达，但不承诺具体配送时段。您所选时段，我们配送时将做参考，尽量满足但不做为服务承诺。
+                    根据我们多年的服务经验，绝大多数订单可以按照客户预定的时间送达，敬请谅解。
+                </label></div>
+
+                <div class="ncc-receipt-info" id="discount_list_top">
+                    <div class="main_ct_tt">商品清单
+                    </div>
+                    <table class="ncc-table-style">
+                        <thead>
+                        <tr>
+                            <th class="w20"></th>
+                            <th></th>
+                            <th style="text-align: left;">商品</th>
+                            <th class="w120">单价</th>
+                            <th class="w120">数量</th>
+                            <th class="w120">小计(元)</th>
+                            <th class="w120">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody id="goods_list">
+                        <tr class="shop-list">
+                            <td>
+                                <input type="hidden" value="100446|1" name="cart_id[]">
+                            </td>
+                            <td class="w80">
+                                <a href="http://www.hua3399.com/goods-100446.html" target="_blank" class="ncc-goods-thumb">
+                                    <img src="img/1_05175119496362255_360.jpg" width="80" height="80">
+                                </a>
+                            </td>
+                            <td class="tl" style="padding-left: 10px;vertical-align: top;">
+                                <dl class="ncc-goods-info">
+                                    <dt><a href="http://www.hua3399.com/goods-100446.html" target="_blank">相依相惜 （香槟玫瑰 爱情 友情 生日 情人 七夕 朋友 圣诞）</a></dt>
+                                </dl>
+                            </td>
+                            <td class="w120"><em>198</em></td>
+                            <td class="w60">
+                                <span class="reduce_num">-</span><input class="goods_num" salenum_start="1" cart_id="100446" value="1" name="goods_num"><span class="add_num">+</span>
+                            </td>
+                            <td class="w120">
+                                <em style="color: #ff5417;font-weight: bold;">198</em>
+                            </td>
+                            <td><a href="javascript:void(0);" cart_id="100446" class="clear_cart">删除</a></td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td class="tr" colspan="20" style="background: #fff8f3;border-top: 1px solid #f5a78f;">
+                                <div class="txts clearfix pdb20">
+                                    <span style="float: left;padding-left: 20px;">贺卡留言：</span>
+                                    <textarea class="message_box" style="width: 300px;height: 80px;" name="pay_message"></textarea>
+                                    <a href="javascript:void(0);" class="rec_blessings ncc-btn-acidblue">使用推荐祝福语</a>
+                                    <div class="txt_examples">
+                                        <p>
+                                            <a href="javascript:void(0);" class="on select_hk" hk="1">追求</a>
+                                            <a href="javascript:void(0);" class="select_hk" hk="2">表白</a>
+                                            <a href="javascript:void(0);" class="select_hk" hk="3">求婚</a>
+                                            <a href="javascript:void(0);" class="select_hk" hk="4">朋友</a>
+                                            <a href="javascript:void(0);" class="select_hk" hk="5">父母</a>
+                                            <a href="javascript:void(0);" class="select_hk" hk="6">长辈</a>
+                                            <a href="javascript:void(0);" class="select_hk" hk="7">老师</a>
+                                            <a href="javascript:void(0);" class="select_hk" hk="8">老婆</a>
+                                            <a href="javascript:void(0);" class="select_hk" hk="9">同事</a>
+                                            <a href="javascript:void(0);" class="select_hk" hk="10">闺蜜</a>
+                                            <a href="javascript:void(0);" class="select_hk" hk="11">客户</a>
+                                            <a href="javascript:void(0);" class="select_hk" hk="12">女神</a>
+                                            <a href="javascript:void(0);" class="select_hk" hk="13">男神</a>
+                                        </p>
+                                        <div class="card_n" id="hk_1" style="display: block;">
+                                            <ul>
+                                                <li class="selected_hk" title="我愿举起落日余晖任你采摘，我愿留住刹那永恒让爱青睐。我愿变成一颗无名的小草，常躲在你目光注视的时间，平凡在你足迹踏过的地方。">1、我愿举起落日余晖任你采摘，我愿留住刹那永恒让爱青睐。我愿变成一颗无名的小草，常躲在你目光注视的时间，平凡在你足迹踏过的地方。</li>
+                                                <li class="selected_hk" title="我想将对你的思念 寄予散落的星子 但愿那点点的星光能照进你的窗前 伴你好眠">2、我想将对你的思念 寄予散落的星子 但愿那点点的星光能照进你的窗前 伴你好眠</li>
+                                                <li class="selected_hk" title="或许我没有太阳般狂热的爱，也没有流水般绵长的情，只知道不断的爱你爱你、竭尽所能地为你。">3、或许我没有太阳般狂热的爱，也没有流水般绵长的情，只知道不断的爱你爱你、竭尽所能地为你。</li>
+                                                <li class="selected_hk" title="相遇总是点点头，想说总是难开口，视线相交的一瞬间，我已感觉到你的温柔。">4、相遇总是点点头，想说总是难开口，视线相交的一瞬间，我已感觉到你的温柔。</li>
+                                                <li class="selected_hk" title="茫茫人海中，相识了你，是一种缘份，只希望用我的真诚，换取你的真情。">5、茫茫人海中，相识了你，是一种缘份，只希望用我的真诚，换取你的真情。</li>
+                                                <li class="selected_hk" title="希望能牵手一起走过今后的日子，不管是鲜花铺路，还是荆棘满地，不离不弃，彼此相爱，我会永远伴随你左右!">6、希望能牵手一起走过今后的日子，不管是鲜花铺路，还是荆棘满地，不离不弃，彼此相爱，我会永远伴随你左右!</li>
+                                                <li class="selected_hk" title="我要你知道，在这个世界上，无论是在什么地方，无论在什么时候，总有那么一个人，总会有那么一个人在深深的爱着你！情人节快乐！">7、我要你知道，在这个世界上，无论是在什么地方，无论在什么时候，总有那么一个人，总会有那么一个人在深深的爱着你！情人节快乐！</li>
+                                                <li class="selected_hk" title="世界上最笨的人，就是爱一个人爱得都不知道如何是好，这个人就是我。我会时时想着你，为你做任何事情。你愿意和我在一起吗？">8、世界上最笨的人，就是爱一个人爱得都不知道如何是好，这个人就是我。我会时时想着你，为你做任何事情。你愿意和我在一起吗？</li>
+                                                <li class="selected_hk" title="如果你是山，我愿是小河，我绕你；如果你是茶叶我愿是开水，我泡你；如果你是云，我愿是风，我追你。">9、如果你是山，我愿是小河，我绕你；如果你是茶叶我愿是开水，我泡你；如果你是云，我愿是风，我追你。</li>
+                                                <li class="selected_hk" title="这辈子最疯狂的事，就是爱上了你，最大的希望，就是有你陪我疯一辈子……">10、这辈子最疯狂的事，就是爱上了你，最大的希望，就是有你陪我疯一辈子……</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_n" id="hk_2" style="display: none;">
+                                            <ul>
+                                                <li class="selected_hk" title="爱上你后我觉得自己变成了一只鱼，你就像是海水一样，如果不能在你的世界里游来游去，我肯定会窒息的，亲爱的，让我陪在你身边和你一起游荡吧！">1、爱上你后我觉得自己变成了一只鱼，你就像是海水一样，如果不能在你的世界里游来游去，我肯定会窒息的，亲爱的，让我陪在你身边和你一起游荡吧！</li>
+                                                <li class="selected_hk" title="新三从四德：太太出门要跟从，太太命令要服从，太太错了要盲从；太太化妆要等得，太太生日要记得，太太花钱要舍得，太太打骂要忍得。">2、新三从四德：太太出门要跟从，太太命令要服从，太太错了要盲从；太太化妆要等得，太太生日要记得，太太花钱要舍得，太太打骂要忍得。</li>
+                                                <li class="selected_hk" title="你是风儿我是沙，你是牛粪我是叉，你是舌头我是牙，你是鱼儿我是虾，我愿做你累时的沙发，我想做你饿时的豆腐花。">3、你是风儿我是沙，你是牛粪我是叉，你是舌头我是牙，你是鱼儿我是虾，我愿做你累时的沙发，我想做你饿时的豆腐花。</li>
+                                                <li class="selected_hk" title="气你，逗你，只因喜欢你；学你，跟你，只因爱上你；疼你，顺你，只因想追你；想你，爱你，只想亲亲你；疼你，懂你，只想问问你，可否一生与我在一起。">4、气你，逗你，只因喜欢你；学你，跟你，只因爱上你；疼你，顺你，只因想追你；想你，爱你，只想亲亲你；疼你，懂你，只想问问你，可否一生与我在一起。</li>
+                                                <li class="selected_hk" title="让我陪着你，上天送厚礼，没有华丽的言语，表达真挚的情谊，只有一颗心，永恒为你跳起，那是我真实的感受，无论白天黑夜时刻牵挂着你。">5、让我陪着你，上天送厚礼，没有华丽的言语，表达真挚的情谊，只有一颗心，永恒为你跳起，那是我真实的感受，无论白天黑夜时刻牵挂着你。</li>
+                                                <li class="selected_hk" title="我恋上了一个她，一见钟情倾心她，心里满满装着她，魂不守舍思念她，短信看完你想想吧，你俩熟识胜一家，其实你就是我的那个她。">6、我恋上了一个她，一见钟情倾心她，心里满满装着她，魂不守舍思念她，短信看完你想想吧，你俩熟识胜一家，其实你就是我的那个她。</li>
+                                                <li class="selected_hk" title="玫瑰的清香，那是我的祝愿，钻戒的珍藏，那是我的情意，手下的祝愿，戴上我的情意，美好的人生，福祸一起抗，幸福快乐源自知心，我用全心给你一生开心。">7、玫瑰的清香，那是我的祝愿，钻戒的珍藏，那是我的情意，手下的祝愿，戴上我的情意，美好的人生，福祸一起抗，幸福快乐源自知心，我用全心给你一生开心。</li>
+                                                <li class="selected_hk" title="没遇到你之前我浑浑噩噩，无所事事。遇到你之后我精神焕发，心情俱佳。这是为什么那？因为我已经中了你爱情的毒，无可救药啦，只有嫁我才能救我，你愿意救我吗？你愿意嫁我吗？">8、没遇到你之前我浑浑噩噩，无所事事。遇到你之后我精神焕发，心情俱佳。这是为什么那？因为我已经中了你爱情的毒，无可救药啦，只有嫁我才能救我，你愿意救我吗？你愿意嫁我吗？</li>
+                                                <li class="selected_hk" title="海枯石烂太虚，我不想说，天涯海角太远，我不想去，天崩地裂太假，我不承诺， 只用真心说一句，因为你的爱，我要永远爱你，嫁给我，共同谱写美好生活。">9、海枯石烂太虚，我不想说，天涯海角太远，我不想去，天崩地裂太假，我不承诺， 只用真心说一句，因为你的爱，我要永远爱你，嫁给我，共同谱写美好生活。</li>
+                                                <li class="selected_hk" title="我不会因为爱而爱，但我会因为你而爱，这是我最真心的话真心希望你能接受求婚。">10、我不会因为爱而爱，但我会因为你而爱，这是我最真心的话真心希望你能接受求婚。</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_n" id="hk_3" style="display: none;">
+                                            <ul>
+                                                <li class="selected_hk" title="我把时间没收，停止我们爱的一刻。我把光阴汇聚，见证我们爱的时刻。我把大海倾倒，也熄灭不了我们爱的火焰。亲爱的，嫁给我吧，爱就在此刻见证。">1、我把时间没收，停止我们爱的一刻。我把光阴汇聚，见证我们爱的时刻。我把大海倾倒，也熄灭不了我们爱的火焰。亲爱的，嫁给我吧，爱就在此刻见证。</li>
+                                                <li class="selected_hk" title="自从走进你的世界，就再也走不出去；你调整我心灵的频率，脑中满是你的印迹；只好成为你的影子，追随你的步履；手握相思的笔，只写了三个字：嫁给我！">2、自从走进你的世界，就再也走不出去；你调整我心灵的频率，脑中满是你的印迹；只好成为你的影子，追随你的步履；手握相思的笔，只写了三个字：嫁给我！</li>
+                                                <li class="selected_hk" title="上天注定我们在一起，问你一下是关心，看你一下是欢心，亲你一下是爱心，一天不见就担心，永远爱你不变心，一生一世只爱你，嫁给我吧。">3、上天注定我们在一起，问你一下是关心，看你一下是欢心，亲你一下是爱心，一天不见就担心，永远爱你不变心，一生一世只爱你，嫁给我吧。</li>
+                                                <li class="selected_hk" title="喜欢，就是淡淡的爱。爱，就是深深的喜欢。我希望以后可以不用送你回家，而是我们一起回我们的家。">4、喜欢，就是淡淡的爱。爱，就是深深的喜欢。我希望以后可以不用送你回家，而是我们一起回我们的家。</li>
+                                                <li class="selected_hk" title="现在每天醒来睁开眼见到的是墙上你那似阳光般的笑靥，好想哪天醒来时，第一眼所触及的是真正的你那似花般甜甜的睡容。">5、现在每天醒来睁开眼见到的是墙上你那似阳光般的笑靥，好想哪天醒来时，第一眼所触及的是真正的你那似花般甜甜的睡容。</li>
+                                                <li class="selected_hk" title="如果爱上你也算是一种错，我深信这会是生命中最美丽的错，我情愿错一辈子。">6、如果爱上你也算是一种错，我深信这会是生命中最美丽的错，我情愿错一辈子。</li>
+                                                <li class="selected_hk" title="牵你的手，朝朝暮暮，牵你的手，等待明天，牵你的手，走过今生，牵你的手，生生世世。嫁给我！！">7、牵你的手，朝朝暮暮，牵你的手，等待明天，牵你的手，走过今生，牵你的手，生生世世。嫁给我！！</li>
+                                                <li class="selected_hk" title="我不知道人类为什么得结婚？！不如让我们一起研究看看，让我们合法地结合吧！">8、我不知道人类为什么得结婚？！不如让我们一起研究看看，让我们合法地结合吧！</li>
+                                                <li class="selected_hk" title="一朵玫瑰代表一份简单纯洁的爱情，一束玫瑰代表一段狂热冲动的爱情，一团玫瑰则代表一句一生一世的承诺!嫁给我吧！">9、一朵玫瑰代表一份简单纯洁的爱情，一束玫瑰代表一段狂热冲动的爱情，一团玫瑰则代表一句一生一世的承诺!嫁给我吧！</li>
+                                                <li class="selected_hk" title="爱你一万年，是我的追求；恋你一千年，是我的渴望；而吻你一次，则是我一生中最快乐的时光；答应我，嫁给我吧！&nbsp;">10、爱你一万年，是我的追求；恋你一千年，是我的渴望；而吻你一次，则是我一生中最快乐的时光；答应我，嫁给我吧！&nbsp;</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_n" id="hk_4" style="display: none;">
+                                            <ul>
+                                                <li class="selected_hk" title="一份付出就有一分收获，一份能力就有一日出头，我的朋友，别忘记在你高升之时，我也为你感到快乐，恭喜你升职！">1、一份付出就有一分收获，一份能力就有一日出头，我的朋友，别忘记在你高升之时，我也为你感到快乐，恭喜你升职！</li>
+                                                <li class="selected_hk" title="钱多钱少，常有就好；人丑人俊，顺眼就好；人老人少，健康就好；家穷家富，和气就好；一切烦恼，理解就好；人的一生，平安就好。">2、钱多钱少，常有就好；人丑人俊，顺眼就好；人老人少，健康就好；家穷家富，和气就好；一切烦恼，理解就好；人的一生，平安就好。</li>
+                                                <li class="selected_hk" title="用友谊，为你披一件健康的衣裳防寒；用真诚，为你送一份吉祥的关怀送暖；用提醒，为你定一条如意的短信保安。朋友祝你健康缠绵，顺利无边，吉祥常伴！">3、用友谊，为你披一件健康的衣裳防寒；用真诚，为你送一份吉祥的关怀送暖；用提醒，为你定一条如意的短信保安。朋友祝你健康缠绵，顺利无边，吉祥常伴！</li>
+                                                <li class="selected_hk" title="如果有一个白胡子老爷爷爬进来，把你装进袋子里，你一定不要惊慌，那是我告诉圣诞老人我最想要的礼物是一个象你这样的朋友！">4、如果有一个白胡子老爷爷爬进来，把你装进袋子里，你一定不要惊慌，那是我告诉圣诞老人我最想要的礼物是一个象你这样的朋友！</li>
+                                                <li class="selected_hk" title="相知是天意，相识是人意，相加便是友谊，有情便有意，我们能聚在一起，因为心有灵犀。">5、相知是天意，相识是人意，相加便是友谊，有情便有意，我们能聚在一起，因为心有灵犀。</li>
+                                                <li class="selected_hk" title="听到你升职的消息，我好高兴，恭喜你，鸿图大展，步步高升！芝麻开花节节高。希望你：今天更比昨天好，一天更比一天高！">6、听到你升职的消息，我好高兴，恭喜你，鸿图大展，步步高升！芝麻开花节节高。希望你：今天更比昨天好，一天更比一天高！</li>
+                                                <li class="selected_hk" title="送你一第好运短信：收到的人会好运连连，阅读的人会心想事成，储存的人会爱情甜蜜，转发的人会年年发财，删除的人会一生事如意。">7、送你一第好运短信：收到的人会好运连连，阅读的人会心想事成，储存的人会爱情甜蜜，转发的人会年年发财，删除的人会一生事如意。</li>
+                                                <li class="selected_hk" title="成功的时候有人与你分享快乐，失意的时候有人给你鼓励安慰，实乃人生一大喜事！朋友，在此真心的为你快乐，恭喜贺喜，节节高升！　心情“云开雾散”，事业“雨后春笋”，生活“风调雨顺”，人生“艳阳高照”，道路“晴空万里”，万事“风和日丽”，永远“春暖花开”！朋友祝你开心快乐！">8、成功的时候有人与你分享快乐，失意的时候有人给你鼓励安慰，实乃人生一大喜事！朋友，在此真心的为你快乐，恭喜贺喜，节节高升！　心情“云开雾散”，事业“雨后春笋”，生活“风调雨顺”，人生“艳阳高照”，道路“晴空万里”，万事“风和日丽”，永远“春暖花开”！朋友祝你开心快乐！</li>
+                                                <li class="selected_hk" title="心似乎不得休息，总是不停地想你，哪怕是夜深人静，但愿星星能送去我的万千祝福。">9、心似乎不得休息，总是不停地想你，哪怕是夜深人静，但愿星星能送去我的万千祝福。</li>
+                                                <li class="selected_hk" title="与晴空牵线，生活处处艳阳天；与温暖联谊，爱情时时甜蜜蜜；与和煦签约，事业分分向上跃；与明朗合作，朋友祝福心火热，朋友，祝你身体健康，四季平安！">10、与晴空牵线，生活处处艳阳天；与温暖联谊，爱情时时甜蜜蜜；与和煦签约，事业分分向上跃；与明朗合作，朋友祝福心火热，朋友，祝你身体健康，四季平安！</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_n" id="hk_5" style="display: none;">
+                                            <ul>
+                                                <li class="selected_hk" title="在您的呵护中成长，我们由一棵柔弱的小苗长成一棵大树。如今，我们长大了，而您却添了许多白发，您毫无所求，毫无怨言，从您慈祥的目光里，我读懂了，这就是世上最伟大的亲情！尽管一束鲜花无法报答您的恩情，可它代表我的心意！">1、在您的呵护中成长，我们由一棵柔弱的小苗长成一棵大树。如今，我们长大了，而您却添了许多白发，您毫无所求，毫无怨言，从您慈祥的目光里，我读懂了，这就是世上最伟大的亲情！尽管一束鲜花无法报答您的恩情，可它代表我的心意！</li>
+                                                <li class="selected_hk" title="虽然我们过着最平淡的生活，母爱却渗透在生活的一点一滴里。妈，祝福您幸福快乐！">2、虽然我们过着最平淡的生活，母爱却渗透在生活的一点一滴里。妈，祝福您幸福快乐！</li>
+                                                <li class="selected_hk" title="走遍千山万水，看过潮起潮落，历经风吹雨打，尝尽酸甜苦辣，始终觉得您的怀抱最温暖！不论我走多远，心中永远眷恋。祝妈妈健康快乐！">3、走遍千山万水，看过潮起潮落，历经风吹雨打，尝尽酸甜苦辣，始终觉得您的怀抱最温暖！不论我走多远，心中永远眷恋。祝妈妈健康快乐！</li>
+                                                <li class="selected_hk" title="妈妈，你给了我生命，给了我温暖，给了我勇气，给了我力量，给了我美丽而聪慧的心灵。我将这一切铭刻在心，祝亲爱的妈妈健康快乐！">4、妈妈，你给了我生命，给了我温暖，给了我勇气，给了我力量，给了我美丽而聪慧的心灵。我将这一切铭刻在心，祝亲爱的妈妈健康快乐！</li>
+                                                <li class="selected_hk" title="人的嘴唇能发出的最甜美的字眼，就是“母亲”，最美好的呼喊，就是“妈妈”。妈妈，我爱您！">5、人的嘴唇能发出的最甜美的字眼，就是“母亲”，最美好的呼喊，就是“妈妈”。妈妈，我爱您！</li>
+                                                <li class="selected_hk" title="妈！看着你一丝一丝的白发，一条一条逐日渐深的皱纹，想起您多年含辛茹苦哺育我成人，请接受我对您最深切的祝愿：永远年轻！">6、妈！看着你一丝一丝的白发，一条一条逐日渐深的皱纹，想起您多年含辛茹苦哺育我成人，请接受我对您最深切的祝愿：永远年轻！</li>
+                                                <li class="selected_hk" title="亲爱的妈妈：“您曾用您坚实的臂弯为我撑起一片蓝天，而今，我也要用我日益丰满的羽翼为您遮挡风雨。妈妈，我永远爱您！">7、亲爱的妈妈：“您曾用您坚实的臂弯为我撑起一片蓝天，而今，我也要用我日益丰满的羽翼为您遮挡风雨。妈妈，我永远爱您！</li>
+                                                <li class="selected_hk" title="我已经告诉您许多次了，但是我将再说一次：我爱您，妈妈！">8、我已经告诉您许多次了，但是我将再说一次：我爱您，妈妈！</li>
+                                                <li class="selected_hk" title="妈妈，您的女儿长大了，也懂事了，您放心吧！没有我的日子您要更加保重您自己！">9、妈妈，您的女儿长大了，也懂事了，您放心吧！没有我的日子您要更加保重您自己！</li>
+                                                <li class="selected_hk" title="亲爱的妈妈，您是我成长的支柱，是我生命的起点，也是我最好的老师。愿您寿比南山松不老，福如东海水长流！">10、亲爱的妈妈，您是我成长的支柱，是我生命的起点，也是我最好的老师。愿您寿比南山松不老，福如东海水长流！</li>
+                                                <li class="selected_hk" title="秋空给人以深深的思索，您留给我的瑰宝是哲人的深思明辨，还有那从容出世的信条。爸爸，祝您健康常乐。">11、秋空给人以深深的思索，您留给我的瑰宝是哲人的深思明辨，还有那从容出世的信条。爸爸，祝您健康常乐。</li>
+                                                <li class="selected_hk" title="爸爸，是您让我拥有了更广阔的天空，是您让我看得更高、更远。每当想起你， 我就无比得自豪，是你时刻在激励我不断奋进。在这个特殊的日子里，祝您身体健康，每天开心！">12、爸爸，是您让我拥有了更广阔的天空，是您让我看得更高、更远。每当想起你， 我就无比得自豪，是你时刻在激励我不断奋进。在这个特殊的日子里，祝您身体健康，每天开心！</li>
+                                                <li class="selected_hk" title="虽然您不轻易表露，但我知道您一直都在关心着我。虽然我从不说什么，但您知道我一直都很在乎您。谢谢您，爸爸！祝您生日快乐！">13、虽然您不轻易表露，但我知道您一直都在关心着我。虽然我从不说什么，但您知道我一直都很在乎您。谢谢您，爸爸！祝您生日快乐！</li>
+                                                <li class="selected_hk" title="献给您无限感激和温馨的祝愿，还有那许多回忆和深情的思念。因为您慈祥无比，难以言表，祝您健康快乐！">14、献给您无限感激和温馨的祝愿，还有那许多回忆和深情的思念。因为您慈祥无比，难以言表，祝您健康快乐！</li>
+                                                <li class="selected_hk" title="爸爸，您对我的教诲是我无尽的财富，谢谢您！祝您节日快乐！">15、爸爸，您对我的教诲是我无尽的财富，谢谢您！祝您节日快乐！</li>
+                                                <li class="selected_hk" title="爸爸，您总是关怀着我，鼓励着我，引导着我！希望您长命百岁，快乐安康！">16、爸爸，您总是关怀着我，鼓励着我，引导着我！希望您长命百岁，快乐安康！</li>
+                                                <li class="selected_hk" title="你的谆谆教诲牢记心房，你的苦口婆心念念不忘，望子成龙是你的梦想，盼铁成钢是你的愿望。为我奔波劳忙，爸爸，祝你安康！">17、你的谆谆教诲牢记心房，你的苦口婆心念念不忘，望子成龙是你的梦想，盼铁成钢是你的愿望。为我奔波劳忙，爸爸，祝你安康！</li>
+                                                <li class="selected_hk" title="吸烟有害健康，为了身体，您就少吸两支吧！爸爸，祝您生日快乐！">18、吸烟有害健康，为了身体，您就少吸两支吧！爸爸，祝您生日快乐！</li>
+                                                <li class="selected_hk" title="一切都不重要，重要的是能够拥有一生的平安和健康。爸爸，我愿您健康和平安。">19、一切都不重要，重要的是能够拥有一生的平安和健康。爸爸，我愿您健康和平安。</li>
+                                                <li class="selected_hk" title="您的坚忍不拔和铮铮硬骨是我永远的榜样，我从您那儿汲取到奋发的力量，走过挫折，迈向成功，爸爸，您是我的榜样，我爱您！">20、您的坚忍不拔和铮铮硬骨是我永远的榜样，我从您那儿汲取到奋发的力量，走过挫折，迈向成功，爸爸，您是我的榜样，我爱您！</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_n" id="hk_6" style="display: none;">
+                                            <ul>
+                                                <li class="selected_hk" title="吉祥如意、富贵安康；让美丽的朝霞、彩霞、晚霞一起飞进您的生活，这就是我的祈愿！">1、吉祥如意、富贵安康；让美丽的朝霞、彩霞、晚霞一起飞进您的生活，这就是我的祈愿！</li>
+                                                <li class="selected_hk" title="在您生日来临之即，祝您身体壮如虎，金钱不胜数，干活不辛苦，快乐非您莫属！">2、在您生日来临之即，祝您身体壮如虎，金钱不胜数，干活不辛苦，快乐非您莫属！</li>
+                                                <li class="selected_hk" title="如果我有一棵快乐草，我想将它给您，我希望您快乐；如果我有两棵，我会给您一棵我一棵，希望我们都快乐；如果有三棵，我会给您两棵，希望您比我快乐！">3、如果我有一棵快乐草，我想将它给您，我希望您快乐；如果我有两棵，我会给您一棵我一棵，希望我们都快乐；如果有三棵，我会给您两棵，希望您比我快乐！</li>
+                                                <li class="selected_hk" title="天给您温暖，地给您温馨，我给您祝福。祝您运气像雨点一样密集！烦恼像流云一样飞去，忧愁像恐龙一样灭绝，幸福像蜂蜜一样甜美。">4、天给您温暖，地给您温馨，我给您祝福。祝您运气像雨点一样密集！烦恼像流云一样飞去，忧愁像恐龙一样灭绝，幸福像蜂蜜一样甜美。</li>
+                                                <li class="selected_hk" title="这一刻有我最深的思念。让云捎去满心的祝福，点缀您甜蜜的梦。愿您拥有一个幸福快乐的新年！">5、这一刻有我最深的思念。让云捎去满心的祝福，点缀您甜蜜的梦。愿您拥有一个幸福快乐的新年！</li>
+                                                <li class="selected_hk" title="祝愿您长寿健康。这一季的花开得格外娇艳，您可知，那是因为我用情感在浇灌只等您的生日赠与您，愿您喜欢。">6、祝愿您长寿健康。这一季的花开得格外娇艳，您可知，那是因为我用情感在浇灌只等您的生日赠与您，愿您喜欢。</li>
+                                                <li class="selected_hk" title="这一季有我最深的思念就让花儿捎去满心的祝福，缀满您甜蜜的梦境，祝您健康快乐！">7、这一季有我最深的思念就让花儿捎去满心的祝福，缀满您甜蜜的梦境，祝您健康快乐！</li>
+                                                <li class="selected_hk" title="一斤花生二斤枣，好运经常跟您跑；三斤苹果四斤梨，吉祥和您不分离；五斤桔子六斤蕉，财源滚进您腰包；七斤葡萄八斤橙，愿您心想事就成；九斤芒果十斤瓜，愿您天天乐开花。">8、一斤花生二斤枣，好运经常跟您跑；三斤苹果四斤梨，吉祥和您不分离；五斤桔子六斤蕉，财源滚进您腰包；七斤葡萄八斤橙，愿您心想事就成；九斤芒果十斤瓜，愿您天天乐开花。</li>
+                                                <li class="selected_hk" title="寿比南山不老松，松古长春朝朝永生。祝您生辰快乐！健康幸福！">9、寿比南山不老松，松古长春朝朝永生。祝您生辰快乐！健康幸福！</li>
+                                                <li class="selected_hk" title="您是经霜的枫树老更红历尽悲欢，愈显得襟怀坦荡。衷心祝愿您生命之树常青！">10、您是经霜的枫树老更红历尽悲欢，愈显得襟怀坦荡。衷心祝愿您生命之树常青！</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_n" id="hk_7" style="display: none;">
+                                            <ul>
+                                                <li class="selected_hk" title="您的学识让我们钦佩，您的为人让我们折服，您的节日让我们共同庆祝！老师，节日快乐！">1、您的学识让我们钦佩，您的为人让我们折服，您的节日让我们共同庆祝！老师，节日快乐！</li>
+                                                <li class="selected_hk" title="像天空一样高远的是您的胸怀、像大山一样深重的是您的恩情、请您接受我诚挚的祝福吧，教师节快乐！">2、像天空一样高远的是您的胸怀、像大山一样深重的是您的恩情、请您接受我诚挚的祝福吧，教师节快乐！</li>
+                                                <li class="selected_hk" title="您的教诲，太阳一般温暖，春风一般和煦，清泉一般甘甜。您的爱，比父爱严厉，比母爱细腻，比友爱厚重。感谢老师对我的教诲，祝您教师节快乐！">3、您的教诲，太阳一般温暖，春风一般和煦，清泉一般甘甜。您的爱，比父爱严厉，比母爱细腻，比友爱厚重。感谢老师对我的教诲，祝您教师节快乐！</li>
+                                                <li class="selected_hk" title="一颗红心，两袖清风，三尺讲台，四季用心，学富五车，才高八斗，您用汗水换来桃李满天下，您用真情换来德艺双丰收！老师，节日快乐，合家幸福！">4、一颗红心，两袖清风，三尺讲台，四季用心，学富五车，才高八斗，您用汗水换来桃李满天下，您用真情换来德艺双丰收！老师，节日快乐，合家幸福！</li>
+                                                <li class="selected_hk" title="你的工作很普通，却被誉为阳光下被光辉的职业；你的工作很寻常，却被称作人类灵魂的工程师；你就是我们敬爱的老师，教师节到了，祝您节日快乐！">5、你的工作很普通，却被誉为阳光下被光辉的职业；你的工作很寻常，却被称作人类灵魂的工程师；你就是我们敬爱的老师，教师节到了，祝您节日快乐！</li>
+                                                <li class="selected_hk" title="敬爱的老师，素白的雪，是您的象征;献上为您编织的神圣光环，祝福您岁岁愉快，年年如意！">6、敬爱的老师，素白的雪，是您的象征;献上为您编织的神圣光环，祝福您岁岁愉快，年年如意！</li>
+                                                <li class="selected_hk" title="今天是个特别的日子，处处洋溢着赞美与感激之情，因为今天是教师节，亲爱的老师，您辛苦了，没有您辛勤的汗水就不会有我们今天的成功，祝您节日快乐！">7、今天是个特别的日子，处处洋溢着赞美与感激之情，因为今天是教师节，亲爱的老师，您辛苦了，没有您辛勤的汗水就不会有我们今天的成功，祝您节日快乐！</li>
+                                                <li class="selected_hk" title="经历了风雨，才知道您的可贵；走上了成功，才知道您的伟大。老师，您辛苦了！">8、经历了风雨，才知道您的可贵；走上了成功，才知道您的伟大。老师，您辛苦了！</li>
+                                                <li class="selected_hk" title="亲爱的老师，不是今天才想起您，只是借此教师佳节，让我深深地祝福您身体健康，幸福开心，合家欢乐，万事如意！">9、亲爱的老师，不是今天才想起您，只是借此教师佳节，让我深深地祝福您身体健康，幸福开心，合家欢乐，万事如意！</li>
+                                                <li class="selected_hk" title="书念完了，试考完了，真想在成功的日子里与您不见不散，把我们的师生情义上演的没完没了。">10、书念完了，试考完了，真想在成功的日子里与您不见不散，把我们的师生情义上演的没完没了。</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_n" id="hk_8" style="display: none;">
+                                            <ul>
+                                                <li class="selected_hk" title="亲爱的老婆，我要让所有的阳光为您灿烂，所有的花朵为你绽放，我爱你每一天！">1、亲爱的老婆，我要让所有的阳光为您灿烂，所有的花朵为你绽放，我爱你每一天！</li>
+                                                <li class="selected_hk" title="一生一世一辈子的依恋；一生一世一辈子的祝福。">2、一生一世一辈子的依恋；一生一世一辈子的祝福。</li>
+                                                <li class="selected_hk" title="你要是茶叶，我用开水泡着；你要是花儿，我用阳光照着；你要是白云，我用清风托着；你要是风筝，我用丝线牵着；你是我的最爱，所以我用心装着！">3、你要是茶叶，我用开水泡着；你要是花儿，我用阳光照着；你要是白云，我用清风托着；你要是风筝，我用丝线牵着；你是我的最爱，所以我用心装着！</li>
+                                                <li class="selected_hk" title="你很勤快我偷懒，犯错总跪搓衣板；你是筷子我是勺，配合默契生活好；你是风儿我是沙，缠缠绵绵守护家。执子之手，与子偕老。老婆，辛苦了！">4、你很勤快我偷懒，犯错总跪搓衣板；你是筷子我是勺，配合默契生活好；你是风儿我是沙，缠缠绵绵守护家。执子之手，与子偕老。老婆，辛苦了！</li>
+                                                <li class="selected_hk" title="如果爱情只是生命旅程中沿途风光，我愿意把这段路，为你变成我此生的信仰。把守护变信念，只准你留下感动幸福甜蜜的泪水。">5、如果爱情只是生命旅程中沿途风光，我愿意把这段路，为你变成我此生的信仰。把守护变信念，只准你留下感动幸福甜蜜的泪水。</li>
+                                                <li class="selected_hk" title="小事，大事，家务事，事事以你为中心；痴情，真情，夫妻情，情情对你最钟情；老婆，我爱你终生不渝！">6、小事，大事，家务事，事事以你为中心；痴情，真情，夫妻情，情情对你最钟情；老婆，我爱你终生不渝！</li>
+                                                <li class="selected_hk" title="感谢你，为我生儿育女；感谢你，为我做饭洗衣；你的爱，默默不语；你的情，真心真意；为了家，你忙东忙西；为了我，你辛苦不已；老婆，我会一生只爱你！">7、感谢你，为我生儿育女；感谢你，为我做饭洗衣；你的爱，默默不语；你的情，真心真意；为了家，你忙东忙西；为了我，你辛苦不已；老婆，我会一生只爱你！</li>
+                                                <li class="selected_hk" title="亲爱的妻，追求你需勇气，和你结合是运气，相亲相爱是福气。我爱你！">8、亲爱的妻，追求你需勇气，和你结合是运气，相亲相爱是福气。我爱你！</li>
+                                                <li title="用真爱开启生活的浪漫，用真情起航柔情蜜意，用痴心打开幸福爱情的天窗，一生与你携手，一世与你相爱，痴情一片永不变。">9、用真爱开启生活的浪漫，用真情起航柔情蜜意，用痴心打开幸福爱情的天窗，一生与你携手，一世与你相爱，痴情一片永不变。</li>
+                                                <li class="selected_hk" title="结婚数年，年龄增长，真情加深，容颜有变，真心未变，激情减退，感情升温，柴米油盐，平淡是福，祝福吾妻，青春永驻，幸福无敌，快乐无忧，我爱你！">10、结婚数年，年龄增长，真情加深，容颜有变，真心未变，激情减退，感情升温，柴米油盐，平淡是福，祝福吾妻，青春永驻，幸福无敌，快乐无忧，我爱你！</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_n" id="hk_9" style="display: none;">
+                                            <ul>
+                                                <li class="selected_hk" title="知你工作辛苦，送上我的祝福，懂你上班疲惫，送上我的安慰；但愿我的祝福能赶走你的辛苦，希望我的安慰能消去你的疲惫；真诚的祝你开心每一天！">1、知你工作辛苦，送上我的祝福，懂你上班疲惫，送上我的安慰；但愿我的祝福能赶走你的辛苦，希望我的安慰能消去你的疲惫；真诚的祝你开心每一天！</li>
+                                                <li class="selected_hk" title="祝你：生活越来越好，脾气越来越小，经济再往上搞，事业一路小跑，忧愁不来打扰，保证没有烦恼，还有艳福不少，异性为你倾倒！">2、祝你：生活越来越好，脾气越来越小，经济再往上搞，事业一路小跑，忧愁不来打扰，保证没有烦恼，还有艳福不少，异性为你倾倒！</li>
+                                                <li class="selected_hk" title="但愿你我匆忙的生活像飞驰的白帆，永远不迷恋彩色的港湾。">3、但愿你我匆忙的生活像飞驰的白帆，永远不迷恋彩色的港湾。</li>
+                                                <li class="selected_hk" title="加薪买房购小车，娶妻生子成家室!祝你好事连连，好梦圆圆。">4、加薪买房购小车，娶妻生子成家室!祝你好事连连，好梦圆圆。</li>
+                                                <li class="selected_hk" title="好同事简简单单，好情谊清清爽爽，好缘份久久长长。">5、好同事简简单单，好情谊清清爽爽，好缘份久久长长。</li>
+                                                <li class="selected_hk" title="有些事不会因时光流逝而褪去，有些人不会因不常见面而忘记，在我心里你是我永远的朋友。">6、有些事不会因时光流逝而褪去，有些人不会因不常见面而忘记，在我心里你是我永远的朋友。</li>
+                                                <li class="selected_hk" title="人生忙忙碌碌，日子酸酸甜甜，缘分简简单单，联系断断续续，惦记时时刻刻，我的祝福长长久久!">7、人生忙忙碌碌，日子酸酸甜甜，缘分简简单单，联系断断续续，惦记时时刻刻，我的祝福长长久久!</li>
+                                                <li class="selected_hk" title="钟声是我的问候,歌声是我的祝福,雪花是我的贺卡,美酒是我的飞吻,清风是我的拥抱,快乐是我的礼物!!">8、钟声是我的问候,歌声是我的祝福,雪花是我的贺卡,美酒是我的飞吻,清风是我的拥抱,快乐是我的礼物!!</li>
+                                                <li class="selected_hk" title="小楼又起春风，垂枝飘拂西东，忆别离，折柳相送，信誓重重。一去几度秋冬，飞雁来去匆匆。几时业成归来，畅怀饮，再圆梦？">9、小楼又起春风，垂枝飘拂西东，忆别离，折柳相送，信誓重重。一去几度秋冬，飞雁来去匆匆。几时业成归来，畅怀饮，再圆梦？</li>
+                                                <li class="selected_hk" title="相会再别离，别离再相聚；秋风吹旷野，一期只一会。我会珍惜你我的友情，更期待相会的时刻。">10、相会再别离，别离再相聚；秋风吹旷野，一期只一会。我会珍惜你我的友情，更期待相会的时刻。</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_n" id="hk_10" style="display: none;">
+                                            <ul>
+                                                <li class="selected_hk" title="原一切的快乐，一切的幸福，一切的温馨，一切的好运永远围绕在你身边!">1、原一切的快乐，一切的幸福，一切的温馨，一切的好运永远围绕在你身边!</li>
+                                                <li class="selected_hk" title="友谊其实是一种感觉：一种突然就会想起的感觉，一种经常牵挂的感觉，一种失落可以依靠的感觉，一种快乐可以分享的感觉。">2、友谊其实是一种感觉：一种突然就会想起的感觉，一种经常牵挂的感觉，一种失落可以依靠的感觉，一种快乐可以分享的感觉。</li>
+                                                <li class="selected_hk" title="愿友谊之手愈握愈紧，让相连的心愈靠愈近!我最要好的朋友，送上我真诚的祝福!">3、愿友谊之手愈握愈紧，让相连的心愈靠愈近!我最要好的朋友，送上我真诚的祝福!</li>
+                                                <li class="selected_hk" title="一年中总有几个日子难忘，一生中总有几个人最值得珍惜，在这个最浪漫温情的日子，送去最真挚地问候，愿你想到我的每一天都快乐无比!">4、一年中总有几个日子难忘，一生中总有几个人最值得珍惜，在这个最浪漫温情的日子，送去最真挚地问候，愿你想到我的每一天都快乐无比!</li>
+                                                <li class="selected_hk" title="想念的话，说也说不完，关怀的心，永远不改变。一串真挚的祝福，一个不平凡的心意，衷心地祝愿你永远幸福！">5、想念的话，说也说不完，关怀的心，永远不改变。一串真挚的祝福，一个不平凡的心意，衷心地祝愿你永远幸福！</li>
+                                                <li class="selected_hk" title="做你想做的事，去你想去的地方，爱你想爱的人，追求你想追求的梦想，许下美好的愿望，拥抱美好的明天，享受美好的时光。愿你快乐一生。">6、做你想做的事，去你想去的地方，爱你想爱的人，追求你想追求的梦想，许下美好的愿望，拥抱美好的明天，享受美好的时光。愿你快乐一生。</li>
+                                                <li class="selected_hk" title="我在那盛开的花瓣上写出对你无穷的思念与祝福!">7、我在那盛开的花瓣上写出对你无穷的思念与祝福!</li>
+                                                <li class="selected_hk" title="因为你的出现，我的生命里多了许多欢笑，从我的世界多了一抹别样的色彩。">8、因为你的出现，我的生命里多了许多欢笑，从我的世界多了一抹别样的色彩。</li>
+                                                <li class="selected_hk" title="感谢你陪我闯过那些风那些雨，感谢在最无助的时候有你鼓励，感谢在孤独的时候至少还有你，亲爱的朋友，想说真得很谢谢你陪我走过人生那么多里地!">9、感谢你陪我闯过那些风那些雨，感谢在最无助的时候有你鼓励，感谢在孤独的时候至少还有你，亲爱的朋友，想说真得很谢谢你陪我走过人生那么多里地!</li>
+                                                <li class="selected_hk" title="朋友是一种感觉，一种冷不丁就会想起的感觉，一种时时牵挂的感觉，一种失意和伤心时可以依靠的感觉，感谢生命中有你!">10、朋友是一种感觉，一种冷不丁就会想起的感觉，一种时时牵挂的感觉，一种失意和伤心时可以依靠的感觉，感谢生命中有你!</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_n" id="hk_11" style="display: none;">
+                                            <ul>
+                                                <li class="selected_hk" title="感谢事业路上有你的帮助，最真挚的祝福送给你，许下美丽的心愿，让你所有的愿望都实现，所有的祈求都灵验，所有的诺言都兑现，所有的快乐和幸福都能看得见。">1、感谢事业路上有你的帮助，最真挚的祝福送给你，许下美丽的心愿，让你所有的愿望都实现，所有的祈求都灵验，所有的诺言都兑现，所有的快乐和幸福都能看得见。</li>
+                                                <li class="selected_hk" title="一种缘分来自天意，一份真情来自记忆，一份感动来自珍惜，一种关怀来自相知，一份温暖来自惦记，一份祝福来自心底、愿您工作顺利！">2、一种缘分来自天意，一份真情来自记忆，一份感动来自珍惜，一种关怀来自相知，一份温暖来自惦记，一份祝福来自心底、愿您工作顺利！</li>
+                                                <li class="selected_hk" title="一颗诚心，两份真情，三人成众，四处打拼，五福同享，六份激情，七分自信，八分向前，九种愿望，十分努力。送上祝福，祝福伙伴，百舸争流，万分顺利。">3、一颗诚心，两份真情，三人成众，四处打拼，五福同享，六份激情，七分自信，八分向前，九种愿望，十分努力。送上祝福，祝福伙伴，百舸争流，万分顺利。</li>
+                                                <li class="selected_hk" title="努力＋拼搏＝奋斗，奋斗＋事业＝成功，成功＋未来＝合作，合作＝你＋我。愿你我合作顺利，合作愉快，合作创造出美好的未来。">4、努力＋拼搏＝奋斗，奋斗＋事业＝成功，成功＋未来＝合作，合作＝你＋我。愿你我合作顺利，合作愉快，合作创造出美好的未来。</li>
+                                                <li class="selected_hk" title="有一种合作，貌合神离心两头；有一种合作，背着坑你烦不休；有一种合作，一人一口乐悠悠；亲爱的合作伙伴，愿我们友情珍藏在心头，共创互赢并肩走；祝你步步高升早登峰，事业顺利无忧愁！">5、有一种合作，貌合神离心两头；有一种合作，背着坑你烦不休；有一种合作，一人一口乐悠悠；亲爱的合作伙伴，愿我们友情珍藏在心头，共创互赢并肩走；祝你步步高升早登峰，事业顺利无忧愁！</li>
+                                                <li class="selected_hk" title="每天进步一点点，每天创造一点点，每天做事多一点，愿你事事都领先，卓越成绩现眼前，美好生活一天又一天。">6、每天进步一点点，每天创造一点点，每天做事多一点，愿你事事都领先，卓越成绩现眼前，美好生活一天又一天。</li>
+                                                <li class="selected_hk" title="共同的事业，共同的目标，共同的奋斗，共同的拼搏，愿今后你我的合作更加紧密，更加顺利，最后祝我们合作愉快。">7、共同的事业，共同的目标，共同的奋斗，共同的拼搏，愿今后你我的合作更加紧密，更加顺利，最后祝我们合作愉快。</li>
+                                                <li class="selected_hk" title="给老板道声好，祝你乘祥云，日进斗金；给老板贺声喜，祝你招财神，喜事不离！祝开业大吉大利，财源滚滚进！">8、给老板道声好，祝你乘祥云，日进斗金；给老板贺声喜，祝你招财神，喜事不离！祝开业大吉大利，财源滚滚进！</li>
+                                                <li class="selected_hk" title="福气满满；快乐连连；万事圆圆；微笑甜甜；一帆风顺、二龙腾飞、三羊开泰、四季平安、五福临门、六六大顺、七星高照、八方好运、九九同心、十全十美。祝您工作顺利！阖家幸福！">9、福气满满；快乐连连；万事圆圆；微笑甜甜；一帆风顺、二龙腾飞、三羊开泰、四季平安、五福临门、六六大顺、七星高照、八方好运、九九同心、十全十美。祝您工作顺利！阖家幸福！</li>
+                                                <li class="selected_hk" title="春风洋溢你、家人关心你、爱情滋润你、朋友忠于你、我在这儿祝福你、幸运之星永远照着你！">10、春风洋溢你、家人关心你、爱情滋润你、朋友忠于你、我在这儿祝福你、幸运之星永远照着你！</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_n" id="hk_12" style="display: none;">
+                                            <ul>
+                                                <li class="selected_hk" title="不管你在外面遭遇到了什么，我都爱你，不管你将来变丑变美，我都不嫌弃你，希望你给我一个保护你，呵护你，爱你的机会。">1、不管你在外面遭遇到了什么，我都爱你，不管你将来变丑变美，我都不嫌弃你，希望你给我一个保护你，呵护你，爱你的机会。</li>
+                                                <li class="selected_hk" title="你的快乐，我独家赞助：你的痛苦，我独家承受；你的幸福，我独家拥有；你的思念，我独家接受：你的脾气，我独家承受：你的一生，我独家陪伴。">2、你的快乐，我独家赞助：你的痛苦，我独家承受；你的幸福，我独家拥有；你的思念，我独家接受：你的脾气，我独家承受：你的一生，我独家陪伴。</li>
+                                                <li class="selected_hk" title="等待一次日出，需要一天；等待一次月圆，需要一月；等待一次花开，需要一年；等待一次“爱你一生一世”，需要一辈子。我亲爱的女神，你的一辈子，我想来承担。">3、等待一次日出，需要一天；等待一次月圆，需要一月；等待一次花开，需要一年；等待一次“爱你一生一世”，需要一辈子。我亲爱的女神，你的一辈子，我想来承担。</li>
+                                                <li class="selected_hk" title="爱你在心口，虽嘴上不说，但心中铭记；爱你在日夜，虽月亮不说，但失眠作陪；爱你在每天，虽不用时间作证，但自己清楚：爱你永远。">4、爱你在心口，虽嘴上不说，但心中铭记；爱你在日夜，虽月亮不说，但失眠作陪；爱你在每天，虽不用时间作证，但自己清楚：爱你永远。</li>
+                                                <li class="selected_hk" title="在我心里，你是宇宙最美最高贵的女神，使我不敢触摸你！一点都不夸张。">5、在我心里，你是宇宙最美最高贵的女神，使我不敢触摸你！一点都不夸张。</li>
+                                                <li class="selected_hk" title="我心中的女神，你俏丽的容颜，似西湖的水，那样迷人；你明亮的双眼，似朝阳下的甘露，透着一份清纯；你娇柔的身躯，似微风中的杨柳，那样婀娜；你纯洁的心灵，似无瑕的美玉，那样晶莹……你知道么，我心中的女神，我对你的爱，远比你想象的深。">6、我心中的女神，你俏丽的容颜，似西湖的水，那样迷人；你明亮的双眼，似朝阳下的甘露，透着一份清纯；你娇柔的身躯，似微风中的杨柳，那样婀娜；你纯洁的心灵，似无瑕的美玉，那样晶莹……你知道么，我心中的女神，我对你的爱，远比你想象的深。</li>
+                                                <li class="selected_hk" title="千秋无绝色，悦目是佳人。倾国倾城貌，惊为天下人。">7、千秋无绝色，悦目是佳人。倾国倾城貌，惊为天下人。</li>
+                                                <li class="selected_hk" title="As long as you're with me, I don't care where we go.（只要和你在一起，去哪里都一样。）">8、As long as you're with me, I don't care where we go.（只要和你在一起，去哪里都一样。）</li>
+                                                <li class="selected_hk" title="对我而言，你就是整个世界。">9、对我而言，你就是整个世界。</li>
+                                                <li class="selected_hk" title="我本来是不想说的但是我真的很喜欢你!真的很喜欢你!你看来了以后是什么感觉不要不理我好吗?等待你的回复。">10、我本来是不想说的但是我真的很喜欢你!真的很喜欢你!你看来了以后是什么感觉不要不理我好吗?等待你的回复。</li>
+                                                <li class="selected_hk" title="有的时候，爱是不用太多言语的，只是默默地注视着你，在乎和你在一起的每一秒钟！">11、有的时候，爱是不用太多言语的，只是默默地注视着你，在乎和你在一起的每一秒钟！</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_n" id="hk_13" style="display: none;">
+                                            <ul>
+                                                <li class="selected_hk" title="你的夕阳，我的容颜，谁的三分之一年！">1、你的夕阳，我的容颜，谁的三分之一年！</li>
+                                                <li class="selected_hk" title="在一段漫长的时光里等待一个很喜欢的人是多么幸福的一件事情。">2、在一段漫长的时光里等待一个很喜欢的人是多么幸福的一件事情。</li>
+                                                <li class="selected_hk" title="我男神是大太阳，我想陪你走过最艰难的日子。">3、我男神是大太阳，我想陪你走过最艰难的日子。</li>
+                                                <li class="selected_hk" title="与你相识是一种缘，与你相恋是一种美，与你相伴是一种福，我愿和你相伴到永远。">4、与你相识是一种缘，与你相恋是一种美，与你相伴是一种福，我愿和你相伴到永远。</li>
+                                                <li class="selected_hk" title="这世上人与人之间，有很多种关系，爱人，朋友，兄弟，姐妹，师徒，同事，总有那么一个人，是你的刻骨铭心，我坚信那个人就是我前世心中人。">5、这世上人与人之间，有很多种关系，爱人，朋友，兄弟，姐妹，师徒，同事，总有那么一个人，是你的刻骨铭心，我坚信那个人就是我前世心中人。</li>
+                                                <li class="selected_hk" title="我爱你，我只想和你在一起。">6、我爱你，我只想和你在一起。</li>
+                                                <li class="selected_hk" title="想你成歌，飞扬;想你成河，流淌;想你成云;飘荡;想你成吻，舒畅。想你不是一个定格，想你永恒。">7、想你成歌，飞扬;想你成河，流淌;想你成云;飘荡;想你成吻，舒畅。想你不是一个定格，想你永恒。</li>
+                                                <li class="selected_hk" title="雪无踪，情无终!雪无形，情有影！冬来，雪轻盈；爱来，情倾城。冬过，雪化水；爱依然，情始终。">8、雪无踪，情无终!雪无形，情有影！冬来，雪轻盈；爱来，情倾城。冬过，雪化水；爱依然，情始终。</li>
+                                                <li class="selected_hk" title="你欠了我！谁要你让我爱上你？所以你就用你一辈子的时间慢慢偿还吧！">9、你欠了我！谁要你让我爱上你？所以你就用你一辈子的时间慢慢偿还吧！</li>
+                                            </ul>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tr" colspan="20" style="background: #fff8f3;padding-bottom: 30px;">
+                                <div class="other_info">其他信息（优惠券、发票、备注）
+                                    <samp class="remark_status" style="display: inline;">∨</samp>
+                                    <samp class="remark_status1" style="display: none;">∧</samp>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="ds_all_other" style="display: none;">
+                            <td class="tr" colspan="20" style="background: #fff8f3;text-indent: 1em;">
+                                <div style="color: #000000;float: left;padding-left: 20px;">
+                                    使用优惠券：<input style="margin-left: 16px;" type="text" class="w100" name="coupon_id" id="coupon_id" value="" placeholder="请输入优惠券">
+                                    &nbsp;&nbsp;
+                                    <span class="ci_error"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="ds_all_other" style="display: none;">
+                            <td class="tr" colspan="20" style="background: #fff8f3;text-indent: 1em;">
+                                <div class="comments_txt" style="float: left;padding-left: 20px;">
+                                    <div style="line-height: 40px;height: 40px;">
+                                        <div style="float: left;">
+                                            <input type="checkbox" name="is_inv" value="1">
+                                            <span class="pdl05">需要发票：</span>
+                                        </div>
+                                        <div style="float: left;display: none;" class="all_invoice">
+                                            <input type="text" name="invoice_info" style="width: 180px;" placeholder="发票抬头">
+                                            <input type="text" name="mailing_address" class="w400" placeholder="邮寄地址">
+                                            <span class="hua_user_fa">使用收花地址</span>
+                                            <span class="beizu">注：增加发票将收取8%税金</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="ds_all_other" style="display: none;">
+                            <td class="tr" colspan="20" style="background: #fff8f3;text-indent: 1em;">
+                                <div style="line-height: 40px;height: 40px;padding-left: 20px;">
+                                    <div style="float: left;">
+                                        <input type="checkbox" name="is_flower_mark" value="1">
+                                        <span class="pdl05">其他备注：</span>
+                                    </div>
+                                    <div style="float: left">
+                                        <input type="text" name="flower_mark" style="display: none;width: 410px;">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tr" colspan="20"><div class="ncc-store-account">
+                                <dl>
+                                    <p style="height: 20px;"></p>
+                                    <dt>总商品金额：</dt>
+                                    <dd><em id="goods_amount">198.00</em>元</dd>
+                                </dl>
+                                <dl style="display: none;">
+                                    <dt>夜间服务费：</dt>
+                                    <dd><em id="serviceFee">0.00</em>元</dd>
+                                </dl>
+                                <dl>
+                                    <dt>发票税点：</dt>
+                                    <dd><em id="inv_fee">0.00</em>元</dd>
+                                </dl>
+                                <dl style="border-bottom: 1px solid #a9a9a9">
+                                    <dt>优惠券抵扣：</dt>
+                                    <dd><em id="coupon_dis">-0.00</em>元</dd>
+                                </dl>
+                                <dl class="total" style="padding-top: 5px;">
+                                    <dt style="color: #333;font-size: 16px;">应付总额：</dt>
+                                    <dd style="color: #c80000;width: 70px;font-size: 16px;line-height: 27px;">
+                                        <em style="font-weight: bold;" id="total_amount">198.00</em>
+                                    </dd>
+                                </dl>
+                                <div class="end_address_ds">
+                                    <div style="float: right;">
+                                        收货地址：<em id="end_address_info"></em><em id="end_address">
+                                    </em>
+                                    </div>
+                                </div>
+                                <div class="end_address_ds">
+                                    <div style="float: right;">
+                                        收货人：<em id="end_true_name">
+                                    </em>
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="payment_select clearfix pdb20" style="float: right;">
+                        <input type="hidden" name="payment_type" id="payment_type" value="online">
+                        <input type="hidden" name="pay_name" id="pay_name" value="online">
+                        <input type="hidden" name="pay_way" value="zhifubao">
+                        <a href="javascript:void(0);" class="cp pay_names" pay_name="online" pay_way="jd">
+                            <img class="selected" src="img/ic_selected.png">
+                            <img src="img/1_11.jpg" style="vertical-align: middle;margin-right: 2px;"><span>网银在线</span>
+                        </a>
+                        <a href="javascript:void(0);" class="cp pay_names" pay_name="online" pay_way="weixin">
+                            <img class="selected" src="img/ic_selected.png">
+                            <img src="img/1_13.jpg" style="vertical-align: middle;margin-right: 2px;"><span>微信支付</span>
+                        </a>
+                        <a href="javascript:void(0);" class="cp on pay_names" pay_name="online" pay_way="zhifubao">
+                            <img class="selected" src="img/ic_selected.png">
+                            <img src="img/1_16.jpg" style="vertical-align: middle;margin-right: 2px;"><span>支付宝支付</span>
+                        </a>                        <a href="javascript:void(0);" class="cp pay_names" pay_name="offline">
+                            <img class="selected" src="img/ic_selected.png">
+                            <span>货到付款</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ncc-bottom"> <span id="submitOrder" class="sub_order fr">提交订单</span> </div>
+                <div id="goods_commend">
+                    <div class="discount_title">同买以下产品可享受优惠</div>
+                    <div class="discount_list">
+                        <ul>
+                            <li>
+                                <a href="http://www.hua3399.com/goods-101780.html" target="_blank">
+                                    <img src="img/1_05175119496362255_360.jpg" width="224" height="224" style="display: inline;">
+                                    <p class="goods_name">费列罗16粒装</p>
+                                    <p class="goods_price ps">￥208.00</p>
+                                    <p class="goods_price jr">￥239.00</p>
+                                    <p>
+                                        <span class="discount_price">同买优惠 30.00元</span>
+                                    </p>
+                                </a>
+                                <a href="javascript:void(0);" class="add_discount" id_v="101780"> + 添加</a>
+                            </li>
+                            <li>
+                                <a href="http://www.hua3399.com/goods-101780.html" target="_blank">
+                                    <img src="img/1_05175119496362255_360.jpg" width="224" height="224" style="display: inline;">
+                                    <p class="goods_name">费列罗16粒装</p>
+                                    <p class="goods_price ps">￥208.00</p>
+                                    <p class="goods_price jr">￥239.00</p>
+                                    <p>
+                                        <span class="discount_price">同买优惠 30.00元</span>
+                                    </p>
+                                </a>
+                                <a href="javascript:void(0);" class="add_discount" id_v="101780"> + 添加</a>
+                            </li>
+                            <li>
+                            <a href="http://www.hua3399.com/goods-101780.html" target="_blank">
+                                <img src="img/1_05175119496362255_360.jpg" width="224" height="224" style="display: inline;">
+                                <p class="goods_name">费列罗16粒装</p>
+                                <p class="goods_price ps">￥208.00</p>
+                                <p class="goods_price jr">￥239.00</p>
+                                <p>
+                                    <span class="discount_price">同买优惠 30.00元</span>
+                                </p>
+                            </a>
+                            <a href="javascript:void(0);" class="add_discount" id_v="101780"> + 添加</a>
+                        </li>
+                            <li>
+                            <a href="http://www.hua3399.com/goods-101780.html" target="_blank">
+                                <img src="img/1_05175119496362255_360.jpg" width="224" height="224" style="display: inline;">
+                                <p class="goods_name">费列罗16粒装</p>
+                                <p class="goods_price ps">￥208.00</p>
+                                <p class="goods_price jr">￥239.00</p>
+                                <p>
+                                    <span class="discount_price">同买优惠 30.00元</span>
+                                </p>
+                            </a>
+                            <a href="javascript:void(0);" class="add_discount" id_v="101780"> + 添加</a>
+                        </li>
+                            <li>
+                            <a href="http://www.hua3399.com/goods-101780.html" target="_blank">
+                                <img src="img/1_05175119496362255_360.jpg" width="224" height="224" style="display: inline;">
+                                <p class="goods_name">费列罗16粒装</p>
+                                <p class="goods_price ps">￥208.00</p>
+                                <p class="goods_price jr">￥239.00</p>
+                                <p>
+                                    <span class="discount_price">同买优惠 30.00元</span>
+                                </p>
+                            </a>
+                            <a href="javascript:void(0);" class="add_discount" id_v="101780"> + 添加</a>
+                        </li>
+                            <li>
+                            <a href="http://www.hua3399.com/goods-101780.html" target="_blank">
+                                <img src="img/1_05175119496362255_360.jpg" width="224" height="224" style="display: inline;">
+                                <p class="goods_name">费列罗16粒装</p>
+                                <p class="goods_price ps">￥208.00</p>
+                                <p class="goods_price jr">￥239.00</p>
+                                <p>
+                                    <span class="discount_price">同买优惠 30.00元</span>
+                                </p>
+                            </a>
+                            <a href="javascript:void(0);" class="add_discount" id_v="101780"> + 添加</a>
+                        </li>
+                            <li>
+                            <a href="http://www.hua3399.com/goods-101780.html" target="_blank">
+                                <img src="img/1_05175119496362255_360.jpg" width="224" height="224" style="display: inline;">
+                                <p class="goods_name">费列罗16粒装</p>
+                                <p class="goods_price ps">￥208.00</p>
+                                <p class="goods_price jr">￥239.00</p>
+                                <p>
+                                    <span class="discount_price">同买优惠 30.00元</span>
+                                </p>
+                            </a>
+                            <a href="javascript:void(0);" class="add_discount" id_v="101780"> + 添加</a>
+                        </li>
+                            <li>
+                            <a href="http://www.hua3399.com/goods-101780.html" target="_blank">
+                                <img src="img/1_05175119496362255_360.jpg" width="224" height="224" style="display: inline;">
+                                <p class="goods_name">费列罗16粒装</p>
+                                <p class="goods_price ps">￥208.00</p>
+                                <p class="goods_price jr">￥239.00</p>
+                                <p>
+                                    <span class="discount_price">同买优惠 30.00元</span>
+                                </p>
+                            </a>
+                            <a href="javascript:void(0);" class="add_discount" id_v="101780"> + 添加</a>
+                        </li>
+                            <li>
+                            <a href="http://www.hua3399.com/goods-101780.html" target="_blank">
+                                <img src="img/1_05175119496362255_360.jpg" width="224" height="224" style="display: inline;">
+                                <p class="goods_name">费列罗16粒装</p>
+                                <p class="goods_price ps">￥208.00</p>
+                                <p class="goods_price jr">￥239.00</p>
+                                <p>
+                                    <span class="discount_price">同买优惠 30.00元</span>
+                                </p>
+                            </a>
+                            <a href="javascript:void(0);" class="add_discount" id_v="101780"> + 添加</a>
+                        </li>
+                            <li>
+                            <a href="http://www.hua3399.com/goods-101780.html" target="_blank">
+                                <img src="img/1_05175119496362255_360.jpg" width="224" height="224" style="display: inline;">
+                                <p class="goods_name">费列罗16粒装</p>
+                                <p class="goods_price ps">￥208.00</p>
+                                <p class="goods_price jr">￥239.00</p>
+                                <p>
+                                    <span class="discount_price">同买优惠 30.00元</span>
+                                </p>
+                            </a>
+                            <a href="javascript:void(0);" class="add_discount" id_v="101780"> + 添加</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<input value="buy" type="hidden" name="act">-->
+                <!--<input value="place_order" type="hidden" name="op">-->
+                <!--<input value="" type="hidden" name="ifcart">-->
+                <!--<input value="1" name="check_sdhren" id="check_sdhren" type="hidden">-->
+                <!--<input value="" name="address_id" id="address_id" type="hidden">-->
+                <!--<input value="" name="buy_city_id" id="buy_city_id" type="hidden">-->
+                <!--<input value="" id="allow_offpay" name="allow_offpay" type="hidden">-->
+                <!--<input value="" id="allow_offpay_batch" name="allow_offpay_batch" type="hidden">-->
+                <!--<input value="" id="offpay_hash" name="offpay_hash" type="hidden">-->
+                <!--<input value="" id="offpay_hash_batch" name="offpay_hash_batch" type="hidden">-->
+                <!--<input value="" name="invoice_id" id="invoice_id" type="hidden">-->
+                <!--<input value="" name="ref_url" type="hidden">-->
+
+            </div></form>
+    </div>
+
+
+</div>
+</body>
+</html>
+<script src="js/jquery.js"></script>
+<script>
+   $(function(){
+       $(".txt_examples p a").hover(function(){
+           $(this).addClass("on").siblings().removeClass("on")
+       })
+
+       $(".rec_blessings").click(function(){
+           $(".txt_examples").show();
+       })
+   })
+</script>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绘图软件</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/canvas.css">
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/shape.js"></script>
+	<script src="js/canvas.js"></script>
+</head>
+<body>
+	<ul class="nav nav-tabs">
+		<li role="presentation">
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					文件<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu file">
+					<li><i class="icon">&#xe602;</i>新建(三键+n)</li>
+					<li><i class="icon">&#xe605;</i>返回(Ctrl+z)</li>
+					<li><i class="icon">&#xe603;</i>保存(Ctrl+s)</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation" class="active"><a href="#" >画图</a>
+		</li>
+	</ul>
+	<div class="draw">
+		<div class="tools">
+			<div class="toolsone">
+			<i class="draw-icon" title="铅笔">&#xe604;</i>
+			<i class="draw-icon" title="填充画板颜色">&#xe60a;</i>
+			<i class="draw-icon" title="清空画板">&#xe616;</i>
+			<i class="draw-icon" title="撤销(Ctrl+z)">&#xe600;</i>
+			<i class="draw-icon" title="新建(Ctrl+shift+alt+n)">&#xe614;</i>
+			<i class="draw-icon" title="保存(Ctrl+s)">&#xe613;</i>
+			<i class="draw-icon" title="橡皮">&#xe606;</i>
+
+			</div>
+			<span>工具</span>
+		</div>
+		<div>
+			<div class="toolsone" style="margin-bottom: 5px">
+			<i class="draw-icon" data-role="line" title="直线">&#xe608;</i>
+			<i class="draw-icon" data-role="rect" title="矩形">&#xe60c;</i>
+			<i class="draw-icon" data-role="arc" title="圆">&#xe60e;</i>
+			<i class="draw-icon sanjiao" data-role="3" title="三角形" >&#xe617;</i>
+			<i class="draw-icon" data-role="polygonsa" title="五角星">&#xe612;</i>
+			<i class="draw-icon" data-role="polygons" title="五边形">&#xe607;</i>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-default btn-xs">多边形</button>
+				<button type="button" class="btn btn-default dropdown-toggle btn-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<ul class="dropdown-menu duobian">
+					<li data-role="5">五边形</li>
+					<li data-role="6">六边形</li>
+					<li data-role="7">七边形</li>
+					<li data-role="8">八边形</li>
+					<li data-role="9">九边形</li>
+					<li data-role="10">十边形</li>
+				</ul>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-default btn-xs">多角形</button>
+				<button type="button" class="btn btn-default dropdown-toggle btn-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<ul class="dropdown-menu duojiao">
+					<li data-role="5">五角星</li>
+					<li data-role="6">六角形</li>
+					<li data-role="7">七角星</li>
+					<li data-role="8">八角星</li>
+					<li data-role="9">九角星</li>
+					<li data-role="10">十角星</li>
+				</ul>
+			</div>
+			<span>形状</span>
+		</div>
+		<div class="drawstyle">
+			<ul>
+				<li class="option" data-role="stroke"><i class="draw-icon">&#xe60b;</i>轮廓</li>
+				<li class="option" data-role="fill"><i class="draw-icon">&#xe609;</i>填充</li>
+			</ul>
+			<span>方式</span>
+		</div>
+		<div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-default btn-xs">粗细</button>
+				<button type="button" class="btn btn-default dropdown-toggle btn-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<ul class="dropdown-menu cuxi">
+					<li data-role="1">细</li>
+					<li data-role="5">中</li>
+					<li data-role="7">粗</li>
+				</ul>
+			</div>
+			<span>粗细</span>
+		</div>
+		<div>
+		<input type="color">
+		<span>线条颜色</span>
+		</div>
+		<div>
+			<input type="color">
+			<span>填充颜色</span>
+		</div>
+	</div>
+	<div class="canvas">
+		<div class="canvasCopy">
+		</div>
+		<div class="clear"></div>
+		<canvas width="800" height="470"></canvas>
+	</div>
+<div class="isSave">
+<span>是否保存已有内容？</span>
+	<div class="confirm">
+	<a href="#">是</a>
+	<a href="#">否</a>
+	</div>
+</div>
+</body>
+</html>

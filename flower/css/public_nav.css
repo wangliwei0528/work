@@ -1,0 +1,66 @@
+/*public-nav*/
+.public-nav-layout .category .menu {
+    background-color: #ff6c86;
+    border-bottom: 2px solid #ff6c86;
+    z-index: 1;position:relative;
+}
+.public-nav-layout .category .menu li {
+    margin-left: 1px;
+    width: 239px;
+    height: 127px;
+    border-top: solid 1px #FFF;
+    position: relative;
+    z-index: 1;
+    left: 1px;
+}
+.public-nav-layout .category .menu li.odd {
+    background-color: #ffffff;
+}
+.public-nav-layout .category .menu li.even {
+    background-color: #fffbf8;
+}
+.public-nav-layout .category .class .h_j {
+    position: absolute;
+    background: url(../img/h_j.png) no-repeat;
+    display: block;
+    width: 6px;
+    height: 9px;
+    right: 22px;
+    top: 22px;
+}
+.public-nav-layout .category .class h4 {
+    font-weight: 600;
+    line-height: 16px;
+    color: #ccc;
+    height: 16px;
+    float: left;
+    margin-top:15px;
+}
+.public-nav-layout .category .class h4 a {
+    color: #ff5e7a;
+    font-size: 15px;
+    margin-left:20px;
+}
+.public-nav-layout .category .class .recommend-class {
+    color: #fff;
+    line-height: 16px;
+    width: 226px;
+    height: 16px;
+    float: left;
+    clear: both;
+    margin-top: 12px;
+    margin-left:20px;
+    display: table;
+}
+.public-nav-layout .category .class .recommend-class a {
+    color: #333;
+    white-space: nowrap;
+    width: 60px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size:12px;
+}
+.public-nav-layout .category .class .recommend-class a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,612 @@
+/* 返回顶部 */
+.backbar{
+    width:35px;
+    height: 45px;
+    position:fixed;
+    z-index: 999;
+    right:10px;bottom:30px;
+}
+.backbar a img{
+    display:block;
+    width:35px;
+    height: 45px;
+}
+/* 返回顶部 */
+/*客服*/
+.set_chat {
+    position: fixed;
+    z-index: 1000;
+    right: 80px;
+    top: 30%;
+    width: 120px;
+}
+.set_chat img {
+    display: block;
+    width: 150px;
+    cursor: pointer;
+}
+.set_chat .chat_close {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.set_chat .chat_close img {
+    width: 13px;
+}
+.set_chat .chat_order_search {
+    bottom: 75px;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    right: -10px;
+}
+.set_chat .chat_sh {
+    bottom: 32px;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    right: -10px;
+    font-size: 14px;
+    color: #CE7C53;
+    text-align: center;
+}
+.set_chat .chat_order_search, .set_chat .chat_sh {
+    position: absolute;
+}
+
+/* 顶部隐藏导航 */
+#cat_fix {
+    width: 100%;
+    position: fixed;
+    top: -50px;
+    background: #FF5555;
+    z-index: 999;
+    box-shadow: 0 1px 5px #bbb;
+}
+#cat_fix .cts {
+    width: 1250px;
+    height: 37px;
+    position: relative;
+    margin: 0 auto;
+}
+.cts ul .fix_logo {
+    display: inline-block;
+    width: 98px;
+    height: 48px;
+    padding: 0;
+    margin-right: 18px;
+    background-image: url(http://www.hua3399.com/shop/templates/default/images/dss.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cts ul .gaod {
+    height: 37px;
+}
+.cts ul li {
+    line-height: 37px;
+    height: 37px;
+    text-align: center;
+    position: relative;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.cts ul li a {
+    margin: 0 12px 0 0;
+    padding: 0 10px;
+    color: #fff;
+    display: block;
+    height: 27px;
+    display: block;
+    font-size: 14px;
+}
+.cts ul li a.cfe6a00 {
+    color: #efff1b;
+}
+.cts ul li a：hover{
+    text-decoration: underline;
+}
+.user-entry>a:hover{
+	text-decoration: underline;
+}
+/* header style */
+/* top */
+.public-top-layout{
+	width:100%;
+	height: 31px;
+	background: rgb(250,250,250);
+	border-bottom:1px solid rgb(240,240,240);
+	box-sizing: border-box;
+}
+.topbar{
+	width:1200px;
+	height: 30px;
+	margin:0 auto;
+}
+.public-top-layout .user-entry .home_ico {
+    background: url(../img/home.png) no-repeat;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 2px;
+    margin-left: 80px;
+}
+.public-top-layout .user-entry{
+	width:45%;
+	height: 20px;
+	float:left;
+	padding:5px 0;
+	font-size:14px;
+}
+.public-top-layout .quick-menu {
+    font-size: 0;
+    text-align: right;
+    width: 55%;
+    height: 30px;
+    float: right;
+}
+.public-top-layout .quick-menu dl {
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+}
+.public-top-layout .quick-menu dl dt {
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+    padding: 5px 0;
+}
+.public-top-layout .quick-menu dl dt img{
+	vertical-align: middle;
+}
+.header-wrap{
+	width:100%;
+	height: 100px;
+}
+header{
+	width:1200px;
+	height:100px;
+	margin:0 auto;
+}
+/* logo */
+.site-logo {
+    width: 240px;
+    height: 60px;
+    float: left;
+    margin: 15px 10px auto 0;
+}
+.site-logo img {
+	display:inline-block;
+    width: 165px;
+    height: 60px;
+    vertical-align: middle;
+}
+/* 搜索框 */
+.head-search-bar {
+    width: 500px;
+    height: 58px;
+    float: left;
+    padding-top: 28px;
+    overflow: hidden;
+}
+.head-search-bar .search-form {
+    background-color: #ff6c86;
+    height: 30px;
+    padding: 2px;
+}
+.head-search-bar .search-form .tab_1 {
+    float: left;
+    width: 9%;
+    background: #fff;
+    height: 30px;
+    line-height: 30px;
+    border-right: 1px solid #ff6c86;
+    color: #a5a5a5;
+    font-size:12px;
+    padding-left: 1%;
+}
+.head-search-bar .input-text {
+    line-height: 32px;
+    font-size:12px;
+    color: #555;
+    width: 72%;
+    height: 18px;
+    float: left;
+    padding: 6px 1%;
+    border: none 0;
+    outline: none;
+}
+/* 提交按钮 */
+.head-search-bar .input-submit, .head-search-bar .input-submit:hover {
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 600;
+    background-color: transparent;
+    width: 15%;
+    height: 32px;
+    float: right;
+    border: none;
+    cursor: pointer;
+    outline: none
+}
+/* 关键词 */
+.head-search-bar .keyword {
+    line-height: 20px;
+    color: #999;
+    white-space: nowrap;
+    width: 500px;
+    height: 20px;
+    margin-top: 4px;
+    overflow: hidden;
+    font-size:12px;
+}
+.head-search-bar .keyword ul {
+    font-size: 0;
+    vertical-align: top;
+    display: inline-block;
+}
+.head-search-bar .keyword ul li {
+    font-size: 12px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+    margin-right: 12px;
+}
+.head-search-bar .keyword ul li a:hover{
+	text-decoration: underline;
+}
+.head-user-menu {
+	width:410px;
+    float: left;
+    margin: 20px 0 0 0;
+    position:relative;
+}
+.head-user-menu dl  dt{
+	border: none;
+	background-color: #fff;
+	color:#ff6c86;
+	font-size: 16px;
+	text-align: right;
+	font-weight: bold;
+	line-height: 24px;
+	cursor:pointer;
+}
+.head-user-menu dl.my-cart {
+    position: absolute;
+    top: 14px;
+    right: 0;
+}
+.head-user-menu dl {
+    font-size: 12px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+    margin-left: 70px;
+    position: relative;
+    z-index: 3;
+}
+.head-user-menu dl.my-cart dt {
+    line-height: 20px;
+    color: #555;
+    font-size:12px;
+    font-weight: normal;
+    background-color: #FAFAFA;
+    width:120px;
+    height: 20px;
+    padding: 10px;
+    border: solid 1px #F0F0F0;
+    cursor: pointer;
+}
+.my-cart:hover .cart{
+    background-color: #fff;
+    border-bottom: none;
+}
+/* 购物车icon */
+.head-user-menu dl.my-cart span.ico {
+    background-position: -120px 0;
+    margin-right: 8px;
+    margin-left:-22px;
+}
+.head-user-menu dl dt span.ico {
+    background: url(../img/top_bg.png) no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+}
+/* 三角形 */
+.head-user-menu dl.my-cart dt i {
+    font-size: 0px;
+    line-height:20px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    margin-left: 18px;
+    border-width: 4px;
+    border-color: #777 transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+    -webkit-transition: .2s ease-in;
+    -moz-transition: -webkit-transform .2s ease-in;
+    -o-transition: -webkit-transform .2s ease-in;
+    transition: .2s ease-in;
+}
+.my-cart:hover .arrow{
+    transform: rotateZ(180deg) translateY(3px);
+}
+/* 购物车商品每一个列表 */
+.head-user-menu dl.my-cart .good {
+    background-color: #FFF;
+    display: none;
+    border: solid 1px #F0F0F0;
+    position: absolute;
+    z-index: -1;
+    top: 40px;
+    right:0;
+}
+.head-user-menu dl.my-cart dd .sub-title {
+    line-height: 28px;
+    height: 28px;
+    padding: 7px;
+    border-bottom: solid 1px #DDD;
+}
+.head-user-menu dl.my-cart dd .incart-goods-box {
+    display: block;
+    width: 348px;
+    max-height: 267px;
+    overflow: hidden;
+    position: relative;
+}
+/* 购物车商品每一个列表 */
+.head-user-menu dl.my-cart dd .incart-goods-box .order{
+	width:100%;
+	height:50px;
+	border-bottom: solid 1px #DDD;
+	line-height: 50px;
+	padding:10px 15px;
+}
+.head-user-menu dl.my-cart dd .incart-goods-box .incart-goods li:last-child{
+	border-bottom:none;
+}
+.head-user-menu dl.my-cart dd .incart-goods-box .order .goods-thumb{
+	display: inline-block;
+	width:50px;
+	height: 50px;
+	border:1px solid #DDD;
+	box-sizing: border-box;
+}
+.head-user-menu dl.my-cart dd .incart-goods-box .order .goods-thumb  a img{
+    display: block;
+    width:47px;
+    height: 47px;
+}
+.head-user-menu dl.my-cart dd .incart-goods-box .order .goods-name{
+    display: inline-block;
+    width:50px;
+    height: 50px;
+    vertical-align: top;
+    margin-left:10px;
+}
+.head-user-menu dl.my-cart dd .incart-goods-box .order .goods-name a:hover{
+    text-decoration: underline;
+}
+.head-user-menu dl.my-cart dd .incart-goods-box .order .goods-price,.head-user-menu dl.my-cart dd .incart-goods-box .order .goods-handle{
+    float: right;
+    margin-right:30px;
+}
+
+.head-user-menu dl div.addcart-goods-num {
+    font: bold 11px/14px Verdana;
+    color: #FFF;
+    background: #F00;
+    text-align: center;
+    display: inline-block;
+    height: 16px;
+    min-width: 16px;
+    max-width: auto!important;
+    border: none 0;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 3;
+    top: -4px;
+    left: 20px;
+}
+/* 结算商品 */
+.head-user-menu dl.my-cart dd .checkout {
+    background-color: #F0F0F0;
+    text-align: right;
+    padding: 8px;
+    overflow: hidden;
+}
+.head-user-menu dl dd .checkout .total-price{
+    display: block;
+    width:100%;
+    height: 20px;
+    text-align: right;
+}
+.head-user-menu dl dd .checkout .btn-cart {
+    float: right;
+    clear: both;
+    line-height: 20px;
+    color: #FFF;
+    background-color: #ff5555;
+    padding: 4px 8px;
+    margin-top: 4px;
+    border-radius: 4px;
+}
+.head-user-menu dl dd a {
+    color: #005EA6;
+}
+/* 导航nav */
+.public-nav-layout{
+    width: 100%;
+    height: 35px;
+    border-bottom: solid 2px #ff6c86;   
+    margin-top: 15px;
+}
+.wrapper{
+    width:1200px;
+    height:100%;
+    margin: 0 auto;
+}
+ .all-category {
+    background: url(../img/h_category.png) no-repeat;
+    display: block;
+    width: 243px;
+    height: 37px;
+    float: left;
+    cursor: pointer;
+}
+ .title {
+    line-height: 20px;
+    height: 20px;
+    padding: 8px 10px 10px 10px;
+}
+.public-nav-layout .category{
+    display:none;
+
+}
+.title:hover .public-nav-layout .category{
+    display:block;
+    z-index: 9999;
+}
+.public-nav-layout .site-menu {
+    font-size: 0;
+    white-space: nowrap;
+    width: 988px;
+    float: left;
+    margin-left:250px;
+    margin-top:-35px;
+    overflow: hidden;
+}
+.public-nav-layout .site-menu li {
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+}
+.public-nav-layout .site-menu li a {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    color: #333;
+    height: 20px;
+    padding: 8px 18px;
+    display: inline-block;
+}
+.public-nav-layout .site-menu li a.current {
+    color: #ff6c86;
+}
+/*/* footer style **/
+footer{
+    background-color: #f5f5f5;
+    width: 100%;
+    height:186px;
+    padding-top: 10px;
+    border-top: solid 1px #e7e7e7;
+    overflow: hidden;
+}
+footer .wapper{
+    width:1200px;
+    height: 175px;
+    margin:0 auto;
+}
+footer ul {
+    font-size: 0;
+    white-space: nowrap;
+    padding: 0 0 10px 0;
+    margin-left: 0;
+}
+footer li {
+    font-size: 12px;
+    display: inline;
+    float: left;
+    padding-left: 40px;
+    width: 100px;
+}
+footer dl {
+    display: block;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+}
+footer dl dt {
+    font: 14px/1.5 "Lucida Grande",tahoma,arial,\5b8b\4f53;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+footer dl dd {
+    font: 12px/1.5 "Lucida Grande",tahoma,arial,\5b8b\4f53;
+    line-height: 24px;
+    white-space: nowrap;
+}
+footer dl dd i {
+    font-size: 0;
+    line-height: 0;
+    background: url(../img/top_bg.png) no-repeat -80px -10px;
+    vertical-align: middle;
+    width: 0px;
+    height: 0px;
+    margin-right: 0px;
+}
+footer dl dd a {
+    color: #666;
+}
+.help {
+    background-color: #f5f5f5;
+    height: 165px;
+}
+.clearfix {
+    display: inline-block;
+}
+.help .contact {
+    margin-left: 16px;
+    border-left: 1px solid #e7e7e7;
+}
+.f-l {
+    float: left;
+    font-size: 12px;
+}
+.help .contact-border {
+    padding: 0px 0 10px 20px;
+    border-left: 1px solid #fff;
+}
+.clearfix {
+    display: inline-block;
+}
+.help .contact .tel {
+    background-position: 0 -250px;
+    color: #00B492;
+    font-size: 14px;
+}
+.help .contact .tel, .help .contact .mail {
+    height: 26px;
+    line-height: 26px;
+    padding-left: 36px;
+    cursor: default;
+}
+#footer {
+    font-size: 12px !important;
+    border-top: 1px solid #e7e7e7;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    overflow: hidden;
+    background: #F5F5F5;
+    width: 100%;
+}
+#footer p {
+    color: #666;
+    word-spacing: 5px;
+    padding: 10px 0;
+}
+#footer a {
+    color: #666;
+    text-decoration: none;
+}

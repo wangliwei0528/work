@@ -1,0 +1,164 @@
+body,html{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-size: 14px;
+	/*background: #D8E2EF;*/
+}
+ul,li{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+@font-face {font-family: 'iconfont';
+	src: url('../font/iconfont.eot'); /* IE9*/
+	src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+	url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.icon{
+	font-family: "iconfont";
+	font-style: normal;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 30px;
+}
+.nav-tabs>li:nth-child(1){
+	margin:3px 10px;
+}
+.dropdown-menu li{
+	width: 100%;
+	height:40px;
+	line-height: 40px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.draw{
+	width:100%;
+	height:100px;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 1px 5px #9FAEC2;
+	padding:0 10px;
+}
+.draw-icon{
+	font-family: "iconfont";
+	font-size: 20px;
+	font-style: normal;
+	cursor: pointer;
+	transition:all 0.5s ease;
+	border-radius: 4px;
+}
+.draw-icon:hover{
+	background:#ccc;
+}
+.draw>div{
+	float: left;
+	margin:10px 0;
+	border-right:1px solid #ddd;
+	padding:0 20px;
+	height:80px;
+	position:relative;
+}
+.draw>div>span{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left:0;
+	width:100%;
+	height:20px;
+	text-align: center;
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 20px;
+}
+.toolsone{
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.drawstyle .draw-icon{
+	margin-right:5px;
+}
+.drawstyle li{
+	cursor: pointer;
+	padding: 0 5px;
+	border-radius: 4px;
+}
+.drawstyle li:hover{
+	background:#ccc;
+}
+.canvas{
+	width:800px;
+	height: 470px;
+	position: relative;
+}
+canvas{
+	background: #ddd;
+	margin-top:10px;
+	box-shadow: 5px 5px 5px #aaa;
+	margin-left:10px;
+}
+.canvasCopy{
+	width:100%;height:100%;
+	position: absolute;
+	left:0;top:0;
+	z-index: 1;
+}
+.isSave{
+	width:250px;
+	height:140px;
+	position: absolute;
+	z-index: 110;
+	left: 0;right:0;
+	top:0;bottom:0;
+	margin:auto;
+	border-radius: 10px;
+	background: #337AB7;
+	display: none;
+	transition:all 0.5s ease;
+	transform: scale(1);
+	box-shadow: 1px 1px 10px #fff;
+}
+.isSave span{
+	display: block;
+	color:#fff;
+	width:100%;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 16px;
+	margin-bottom: 30px;
+}
+.isSave a{
+	display: inline-block;
+	width:50px;
+	height:24px;
+	color:#555;
+	background: #ddd;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 24px;
+}
+.isSave a:nth-child(1){
+	margin-left:70px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+.dropdown-menu li{
+	padding-left: 5px;
+}
+.clear{
+	width:10px;
+	height:10px;
+	position:absolute;
+	background: #fff;
+	border:1px solid #000;
+	display: none;
+}

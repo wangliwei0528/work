@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结算订单</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/public_nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+<!-- top textarea -->
+    <div class="public-top-layout">
+    <div class="topbar">
+        <div class="user-entry">
+            <a href="index.html">
+                <i class="home_ico"></i>首页
+            </a>
+        </div>
+        <div class="quick-menu">
+            <dl>
+                <dt>
+                    <img style="padding-right: 4px;" src="img/common/my_order.png">
+                    <a style="vertical-align: middle;" href="#">我的订单</a>
+                </dt>
+            </dl>
+            <dl>
+                <dt>
+                    <img style="padding-right: 4px;" src="img/common/order.png">
+                    <a style="vertical-align: middle;" href="#">订单查询</a>
+                </dt>
+            </dl>
+            <dl>
+                <dt>
+                    <img style="padding-right: 4px;" src="img/common/order_tou.png">
+                    <a style="vertical-align: middle;" href="#">投诉建议</a>
+                </dt>
+            </dl>
+            <dl>
+                <dt style="padding-left: 10px;">
+                    <a href="#" target="_blank">
+                        <label style="color:red;color: blue;cursor: pointer;">合作或加盟</label>
+                    </a>
+                </dt>
+            </dl>
+        </div>
+    </div>
+</div>
+<!-- top textarea -->
+<!--header star-->
+    <header>
+        <main>
+            <div class="site-logo">
+                <a href="#">
+                    <img src="img/huashi_logo.jpg" alt="">
+                </a>
+            </div>
+            <ul class="ncc-flow">
+                <li class="current"><i class="step1"></i>
+                    <p>我的购物车</p>
+                    <sub></sub>
+                    <div class="hr"></div>
+                </li>
+                <li class=""><i class="step2"></i>
+                    <p>填写核对购物信息</p>
+                    <sub></sub>
+                    <div class="hr"></div>
+                </li>
+                <li class=""><i class="step3"></i>
+                    <p>支付提交</p>
+                    <sub></sub>
+                    <div class="hr"></div>
+                </li>
+                <li class=""><i class="step4"></i>
+                    <p>订单完成</p>
+                    <sub></sub>
+                    <div class="hr"></div>
+                </li>
+            </ul>
+        </main>
+    </header>
+<!--header end-->
+<!--我的购物车star-->
+    <div class="ncc-wrapper">
+        <main>
+            <!--mycar star-->
+                <div class="mycar">
+                    <h3>我的购物车</h3>
+                    <h5>查看购物车商品清单，增加减少商品数量，并勾选想要的商品进入下一步操作。</h5>
+                </div>
+            <!--mycar end-->
+            <form action="">
+                <table class="ncc-table-style" nc_type="table_cart">
+                    <thead>
+                    <tr class="title">
+                        <th class="w50">
+                            <label style="margin-left:16px;">
+                                 <input type="checkbox" checked="" value="1" id="selectAll">
+                                全选
+                            </label>
+                        </th>
+                        <th></th>
+                        <th>商品</th>
+                        <th class="w120">单价(元)</th>
+                        <th class="w120">数量</th>
+                        <th class="w120">小计(元)</th>
+                        <th class="w80">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th colspan="20">
+                            <strong>店铺：<a href="index.html">花市网</a></strong>
+                            <span member_id="1"></span>
+                        </th>
+                    </tr>
+                    <tr id="cart_item_5703" nc_group="5703" class="shop-list ">
+                        <td>
+                            <input type="checkbox" checked="" nc_type="eachGoodsCheckBox" value="5703|1" id="cart_id5703" name="cart_id[]">
+                        </td>
+                        <td class="w60">
+                            <a href="http://www.hua3399.com/goods-100446.html" target="_blank" class="ncc-goods-thumb">
+                                <img src="http://img.ihuashi.cn/data/upload/shop/store/goods/1/2016/05/11/1_05162989405589920_60.jpg" alt="相依相惜 （香槟玫瑰  爱情 友情 生日 情人 七夕 朋友 圣诞）">
+                            </a>
+                        </td>
+                        <td class="tl">
+                            <dl class="ncc-goods-info">
+                            <dt>
+                                <a href="http://www.hua3399.com/goods-100446.html" target="_blank">相依相惜 （香槟玫瑰 爱情 友情 生日 情人 七夕 朋友 圣诞）
+                                </a>
+                            </dt>
+                        </dl>
+                        </td>
+                        <td class="w120">
+                            <em id="item5703_price">198</em>
+                        </td>
+                        <td class="w120 ws0">
+                            <a href="JavaScript:void(0);" onclick="decrease_quantity(5703);" title="减少商品件数" class="add-substract-key tip">
+                                -</a>
+                            <input id="input_item_5703" value="1" orig="1" changed="1" onkeyup="change_quantity();" type="text" class="text w20">
+                            <a href="JavaScript:void(0);" onclick="add_quantity();" title="增加商品件数" class="add-substract-key tip">
+                                +</a>
+                        </td>
+                        <td class="w120">
+                            <em id="item5703_subtotal" nc_type="eachGoodsTotal">198.00</em>
+                        </td>
+                        <td class="w80">
+                            <a href="javascript:void(0)" class="collect">收藏</a><br>
+                            <a href="javascript:void(0)" class="delete">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tr" colspan="20">
+                            <div class="ncc-store-account">
+                                <dl style="float:right;">
+                                    <dt>店铺合计：</dt>
+                                    <dd>
+                                        <em nc_type="eachStoreTotal">198.00</em>元
+                                    </dd>
+                                </dl>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="20"><div class="ncc-all-account">商品总价（不含运费）<em id="cartTotal">198.00</em>元</div></td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </form>
+            <div class="ncc-bottom">
+                <a id="next_submit" href="buynow.html" class="ncc-btn ncc-btn-acidblue fr">
+                    <i class="icon-pencil"></i>
+                    下一步，填写核对购物信息
+                 </a>
+            </div>
+        </main>
+    </div>
+<!--我的购物车end-->
+<footer style="border:none">
+    <div class="wapper">
+        <ul>
+            <li>
+                <dl class="s1">
+                    <dt>
+                        购物指南
+                    </dt>
+                    <dd>
+                        <i></i>
+                        <a href="" title="品牌服务"> 品牌服务 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="购物流程"> 购物流程 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="订购必读"> 订购必读 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="VIP会员"> VIP会员 </a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="s2">
+                    <dt>
+                        支付方式
+                    </dt>
+                    <dd>
+                        <i></i>
+                        <a href="" title="在线支付"> 在线支付 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="发票说明"> 发票说明 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="银行转账说明"> 银行转账说明 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="货到付款及要求"> 货到付款及要求 </a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="s3">
+                    <dt>
+                        配送方式
+                    </dt>
+                    <dd>
+                        <i></i>
+                        <a href="" title="配送范围"> 配送范围 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="鲜花定时配送"> 鲜花定时配送 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="配送说明"> 配送说明 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="配送费用收取标准"> 配送费用收取标准 </a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="s4">
+                    <dt>
+                        售后服务
+                    </dt>
+                    <dd>
+                        <i></i>
+                        <a href="" title="订单处理"> 订单处理 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="在线支付"> 在线支付 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="投诉处理规范"> 投诉处理规范 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="订单查询及撤销"> 订单查询及撤销 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="修改订单信息说明"> 修改订单信息说明 </a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="s5">
+                    <dt>
+                        相关知识
+                    </dt>
+                    <dd>
+                        <i></i>
+                        <a href="" title="鲜花枝数寓意"> 鲜花枝数寓意 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="浪漫花语"> 浪漫花语 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="节日送花寓意"> 节日送花寓意 </a>
+                    </dd>
+                    <dd>
+                        <i></i>
+                        <a href="" title="蛋糕尺寸"> 蛋糕尺寸 </a>
+                    </dd>
+                </dl>
+            </li>
+            <li> <dl class="s6">
+                <dt>
+                    帮助中心
+                </dt>
+                <dd>
+                    <i></i>
+                    <a href="" title="关于我们"> 关于我们 </a>
+                </dd>
+                <dd>
+                    <i></i>
+                    <a href="" title="联系我们"> 联系我们 </a>
+                </dd>
+                <dd>
+                    <i></i>
+                    <a href="" title="安全条款"> 安全条款 </a>
+                </dd>
+                <dd>
+                    <i></i>
+                    <a href="" title="隐私保护"> 隐私保护 </a>
+                </dd>
+                <dd>
+                    <i></i>
+                    <a href="" title="常见问题"> 常见问题 </a>
+                </dd>
+            </dl>
+            </li>
+        </ul>
+        <div class="help">
+            <div class="w1190 clearfix">
+                <div class="contact f-l">
+                    <div class="contact-border clearfix">
+                        <div style="width:40%;float:left;">
+                            <div style="width:100%;height:25%;margin-top:6px;">
+                                <label>花店经营时间</label>
+                            </div>
+                            <div style="width:100%;height:25%;margin-top:6px;">
+                                <label>9:00~20:00</label>
+                            </div>
+                            <div style="width:100%;height:25%;margin-top:6px;">
+                                <label>花店留言回复时间</label>
+                            </div>
+                            <div style="width:100%;height:25%;margin-top:6px;">
+                                <label>9:00~22:00</label>
+                            </div>
+                        </div>
+                        <div style="width:60%;float:right;">
+                            <div style="width:100%;height:25%;margin-top:6px;">
+                                <label>花店服务热线（免长途费）</label>
+                            </div>
+                            <div style="width:100%;height:25%;margin-top:6px;">
+                                <span class="ic tel t20">4001-151-557</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="footer" class="wrapper">
+    <p>
+        <a href="/">首页</a>
+        | <a href="">购物指南</a>
+        | <a href="">支付方式</a>
+        | <a href="">配送方式</a>
+        | <a href="">售后服务</a>
+        | <a href="">相关知识</a>
+        | <a href="">帮助中心</a>
+        | <a href="" style="color: blue;">合作或加盟</a>
+    </p>
+    唯婚网络科技有限公司
+</div>
+<!-- footer -->
+</body>
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/payment.js"></script>

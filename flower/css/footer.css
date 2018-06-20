@@ -1,0 +1,106 @@
+/*/* footer style **/
+footer{
+    background-color: #f5f5f5;
+    width: 100%;
+    height:186px;
+    padding-top: 10px;
+    border-top: solid 1px #e7e7e7;
+    overflow: hidden;
+}
+footer .wapper{
+    width:1200px;
+    height: 175px;
+    margin:0 auto;
+}
+footer ul {
+    font-size: 0;
+    white-space: nowrap;
+    padding: 0 0 10px 0;
+    margin-left: 0;
+}
+footer li {
+    font-size: 12px;
+    display: inline;
+    float: left;
+    padding-left: 40px;
+    width: 100px;
+}
+footer dl {
+    display: block;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+}
+footer dl dt {
+    font: 14px/1.5 "Lucida Grande",tahoma,arial,\5b8b\4f53;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+footer dl dd {
+    font: 12px/1.5 "Lucida Grande",tahoma,arial,\5b8b\4f53;
+    line-height: 24px;
+    white-space: nowrap;
+}
+footer dl dd i {
+    font-size: 0;
+    line-height: 0;
+    background: url(../img/top_bg.png) no-repeat -80px -10px;
+    vertical-align: middle;
+    width: 0px;
+    height: 0px;
+    margin-right: 0px;
+}
+footer dl dd a {
+    color: #666;
+}
+.help {
+    background-color: #f5f5f5;
+    height: 165px;
+}
+.clearfix {
+    display: inline-block;
+}
+.help .contact {
+    margin-left: 16px;
+    border-left: 1px solid #e7e7e7;
+}
+.f-l {
+    float: left;
+    font-size: 12px;
+}
+.help .contact-border {
+    padding: 0px 0 10px 20px;
+    border-left: 1px solid #fff;
+}
+.clearfix {
+    display: inline-block;
+}
+.help .contact .tel {
+    background-position: 0 -250px;
+    color: #00B492;
+    font-size: 14px;
+}
+.help .contact .tel, .help .contact .mail {
+    height: 26px;
+    line-height: 26px;
+    padding-left: 36px;
+    cursor: default;
+}
+#footer {
+    font-size: 12px !important;
+    border-top: 1px solid #e7e7e7;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    overflow: hidden;
+    background: #F5F5F5;
+    width: 100%;
+}
+#footer p {
+    color: #666;
+    word-spacing: 5px;
+    padding: 10px 0;
+}
+#footer a {
+    color: #666;
+    text-decoration: none;
+}
